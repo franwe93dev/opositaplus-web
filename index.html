@@ -868,12 +868,107 @@ section { position: relative; }
 
 .plans {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--sp-l);
-  align-items: start;
+  align-items: stretch;
 }
 
-@media (max-width: 940px) { .plans { grid-template-columns: 1fr; max-width: 520px; margin-inline: auto; } }
+.plan ul { flex: 1 1 auto; }
+
+.plan-common {
+  margin-top: var(--sp-l);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-s) var(--sp-l);
+  padding: var(--sp-m) var(--sp-l);
+  border-radius: var(--r-pill);
+  border: 1px solid var(--separator);
+  background: var(--surface-elevated);
+  font-size: 14px;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.plan-common b { color: var(--text-primary); font-weight: 800; }
+.plan-common span { display: inline-flex; align-items: center; gap: 7px; }
+.plan-common .ic { color: var(--accent); font-size: 18px; }
+
+@media (max-width: 700px) { .plan-common { border-radius: var(--r-card); } }
+
+@media (max-width: 1180px) { .plans { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 760px; margin-inline: auto; } }
+@media (max-width: 700px) { .plans { grid-template-columns: 1fr; max-width: 460px; } }
+
+/* Selector de facturación */
+
+.billing {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0 auto var(--sp-xl);
+  padding: 5px;
+  border-radius: var(--r-pill);
+  background: var(--surface-elevated);
+  border: 1px solid var(--separator);
+  box-shadow: var(--shadow);
+}
+
+.billing-wrap { display: flex; justify-content: center; }
+
+.billing-thumb {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 0;
+  width: 0;
+  border-radius: var(--r-pill);
+  background: linear-gradient(135deg, var(--btn-grad-a), var(--btn-grad-b));
+  box-shadow: var(--shadow-accent);
+  transition: transform .38s var(--ease-bouncy), width .38s var(--ease-bouncy);
+  pointer-events: none;
+}
+
+.billing-opt {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 20px;
+  border: 0;
+  border-radius: var(--r-pill);
+  background: transparent;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color .28s var(--ease-standard);
+}
+
+.billing-opt[aria-pressed="true"] { color: #FFFFFF; }
+
+.billing-save {
+  padding: 3px 9px;
+  border-radius: var(--r-pill);
+  background: color-mix(in srgb, var(--success) 16%, transparent);
+  color: var(--success);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .02em;
+  transition: background .28s var(--ease-standard), color .28s var(--ease-standard);
+}
+
+.billing-opt[aria-pressed="true"] .billing-save {
+  background: rgba(255, 255, 255, .22);
+  color: #FFFFFF;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .billing-thumb { transition: none; }
+}
 
 .plan {
   position: relative;
@@ -896,7 +991,13 @@ section { position: relative; }
   box-shadow: var(--shadow-accent);
 }
 
-@media (min-width: 941px) { .plan-featured { transform: scale(1.035); } .plan-featured:hover { transform: scale(1.035) translateY(-4px); } }
+@media (min-width: 1181px) { .plan-featured { transform: scale(1.035); } .plan-featured:hover { transform: scale(1.035) translateY(-4px); } }
+
+.plan-free {
+  border-style: dashed;
+  border-color: color-mix(in srgb, var(--accent) 42%, transparent);
+  background: linear-gradient(180deg, var(--accent-surface), var(--surface) 58%);
+}
 
 .plan-badge {
   position: absolute;
@@ -922,9 +1023,30 @@ section { position: relative; }
 .plan-name .ic { color: var(--accent); font-size: 20px; }
 .plan-for { font-size: 14px; color: var(--text-secondary); }
 
-.price { display: flex; align-items: baseline; gap: 6px; }
+.price { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
 .price b { font-size: 40px; font-weight: 800; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
 .price span { font-size: 15px; color: var(--text-secondary); font-weight: 600; }
+
+.price-block { display: flex; flex-direction: column; gap: 4px; }
+.price-note { font-size: 13px; color: var(--text-tertiary); font-weight: 600; min-height: 18px; }
+.price-note s { color: var(--text-tertiary); opacity: .75; }
+.price-note em { font-style: normal; color: var(--success); font-weight: 800; }
+
+@keyframes priceIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.plans[data-billing="monthly"] .price-annual,
+.plans[data-billing="annual"] .price-monthly { display: none; }
+
+.js .plans .price-monthly,
+.js .plans .price-annual { animation: priceIn .32s var(--ease-standard) both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .plans .price-monthly,
+  .js .plans .price-annual { animation: none; }
+}
 
 .plan ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 11px; }
 
@@ -1377,7 +1499,7 @@ html.js .reveal.is-in {
             <th scope="row">Precio al mes</th>
             <td><span class="mark">Desde 60 € al mes</span></td>
             <td><span class="mark">Suele haber anuncios</span></td>
-            <td class="col-us"><span class="mark">Desde 4,99 € al mes, sin anuncios</span></td>
+            <td class="col-us"><span class="mark">Desde 4,99 € al mes o 49,99 € al año, sin anuncios</span></td>
           </tr>
         </tbody>
       </table>
@@ -1464,10 +1586,46 @@ html.js .reveal.is-in {
     <div class="section-head reveal" style="max-width:64ch">
       <span class="eyebrow">Precios</span>
       <h2>Empieza gratis. Sigue por menos de lo que cuestan otras apps o academias.</h2>
-      <p>Todos los planes incluyen el temario completo y los tests sin límite. La diferencia es cuántas oposiciones puedes preparar a la vez.</p>
+      <p>Empieza con la prueba gratuita y, si te cunde, sigue con el plan que necesites. Todos incluyen el temario completo y los tests sin límite: la diferencia es cuántas oposiciones puedes preparar a la vez.</p>
     </div>
 
-    <div class="plans">
+    <div class="billing-wrap reveal">
+      <div class="billing" id="billing" role="group" aria-label="Ciclo de facturación">
+        <span class="billing-thumb" aria-hidden="true"></span>
+        <button class="billing-opt" type="button" data-billing-opt="monthly" aria-pressed="true">Mensual</button>
+        <button class="billing-opt" type="button" data-billing-opt="annual" aria-pressed="false">
+          Anual <span class="billing-save">−17 %</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="plans" id="plans" data-billing="monthly">
+
+      <article class="plan plan-free reveal">
+        <div class="plan-head">
+          <div class="plan-name">
+            <svg class="ic" aria-hidden="true"><use href="#i-lock-open"/></svg>
+            Prueba
+          </div>
+          <div class="plan-for">Para ver si es tu forma de estudiar.</div>
+        </div>
+        <div class="price-block">
+          <div class="price"><b>0 €</b><span>/ 7 días</span></div>
+          <div class="price-note">Sin pagar nada por adelantado</div>
+        </div>
+        <div class="plan-divider"></div>
+        <ul>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><b>7 días</b> desde que instalas la app</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><b>Tests de prueba</b> de cada bloque del temario</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Introducción y puntos clave de los temas de muestra</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Corrección razonada y estadísticas de tus aciertos</span></li>
+        </ul>
+        <a class="btn btn-secondary" href="#descargar">
+          <svg class="ic" aria-hidden="true"><use href="#i-sparkles"/></svg>
+          Probar gratis
+        </a>
+        <div class="plan-foot">Al acabar decides el plan; si no, no se cobra nada</div>
+      </article>
 
       <article class="plan reveal">
         <div class="plan-head">
@@ -1477,20 +1635,22 @@ html.js .reveal.is-in {
           </div>
           <div class="plan-for">Para quien va a por una plaza concreta.</div>
         </div>
-        <div class="price"><b>4,99 €</b><span>/ mes</span></div>
+        <div class="price-block">
+          <div class="price price-monthly"><b>4,99 €</b><span>/ mes</span></div>
+          <div class="price price-annual"><b>49,99 €</b><span>/ año</span></div>
+          <div class="price-note price-monthly">O 49,99 € al año y ahorras un 17 %</div>
+          <div class="price-note price-annual"><s>59,88 €</s> · <em>4,17 € al mes</em></div>
+        </div>
         <div class="plan-divider"></div>
         <ul>
-          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><b>Acceso ilimitado</b> a todos los temas de una oposición</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><b>1 oposición</b> activa, con todos sus temas al completo</span></li>
           <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><b>Intentos ilimitados</b> en los tests rápidos y en los de cada tema</span></li>
           <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Simulacros cronometrados con corrección razonada</span></li>
           <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Repaso de fallos con repetición espaciada</span></li>
           <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Estadísticas de aciertos y evolución semanal</span></li>
-          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Actualizaciones de temario cada convocatoria</span></li>
-          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Funciona sin conexión, sin anuncios</span></li>
-          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><b>1 oposición</b> activa a la vez</span></li>
         </ul>
-        <a class="btn btn-secondary" href="#descargar">Empezar gratis</a>
-        <div class="plan-foot">7 días de prueba incluidos</div>
+        <a class="btn btn-secondary" href="#descargar">Elegir Básico</a>
+        <div class="plan-foot">Empiezas con los 7 días de prueba</div>
       </article>
 
       <article class="plan plan-featured reveal">
@@ -1505,7 +1665,12 @@ html.js .reveal.is-in {
           </div>
           <div class="plan-for">Para quien se presenta a varias convocatorias.</div>
         </div>
-        <div class="price"><b>9,99 €</b><span>/ mes</span></div>
+        <div class="price-block">
+          <div class="price price-monthly"><b>9,99 €</b><span>/ mes</span></div>
+          <div class="price price-annual"><b>99,99 €</b><span>/ año</span></div>
+          <div class="price-note price-monthly">O 99,99 € al año y ahorras un 17 %</div>
+          <div class="price-note price-annual"><s>119,88 €</s> · <em>8,33 € al mes</em></div>
+        </div>
         <div class="plan-divider"></div>
         <ul>
           <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><b>Todo lo del plan Básico</b></span></li>
@@ -1513,10 +1678,11 @@ html.js .reveal.is-in {
           <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Progreso, fallos y estadísticas separados por oposición</span></li>
           <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Cambia de una a otra sin perder nada de lo avanzado</span></li>
           <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Avisos de plazos de todas tus convocatorias</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Planificador semanal según tu fecha de examen</span></li>
         </ul>
         <a class="btn btn-primary" href="#descargar">
           <svg class="ic" aria-hidden="true"><use href="#i-sparkles"/></svg>
-          Probar 7 días gratis
+          Elegir Plus
         </a>
         <div class="plan-foot">Lo que necesita la mayoría de opositores</div>
       </article>
@@ -1529,25 +1695,40 @@ html.js .reveal.is-in {
           </div>
           <div class="plan-for">Para quien se presenta a todo lo que sale.</div>
         </div>
-        <div class="price"><b>19,99 €</b><span>/ mes</span></div>
+        <div class="price-block">
+          <div class="price price-monthly"><b>19,99 €</b><span>/ mes</span></div>
+          <div class="price price-annual"><b>199,99 €</b><span>/ año</span></div>
+          <div class="price-note price-monthly">O 199,99 € al año y ahorras un 17 %</div>
+          <div class="price-note price-annual"><s>239,88 €</s> · <em>16,67 € al mes</em></div>
+        </div>
         <div class="plan-divider"></div>
         <ul>
           <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><b>Todo lo del plan Plus</b></span></li>
           <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><b>Oposiciones ilimitadas</b>, las que quieras a la vez</span></li>
           <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Acceso al catálogo completo de la CARM y del SMS</span></li>
           <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Prioridad en las nuevas oposiciones que añadimos</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Modo recta final: repaso intensivo antes del examen</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Descarga tus fallos y tus estadísticas en PDF</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Soporte prioritario por correo</span></li>
         </ul>
-        <a class="btn btn-secondary" href="#descargar">Empezar gratis</a>
-        <div class="plan-foot">7 días de prueba incluidos</div>
+        <a class="btn btn-secondary" href="#descargar">Elegir Max</a>
+        <div class="plan-foot">Empiezas con los 7 días de prueba</div>
       </article>
+    </div>
+
+    <div class="plan-common reveal">
+      <b>En todos los planes:</b>
+      <span><svg class="ic" aria-hidden="true"><use href="#i-repeat"/></svg>Actualizaciones de temario cada convocatoria</span>
+      <span><svg class="ic" aria-hidden="true"><use href="#i-wifi-slash"/></svg>Funciona sin conexión</span>
+      <span><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg>Sin anuncios y sin permanencia</span>
     </div>
 
     <div class="trial-strip reveal">
       <svg class="ic" aria-hidden="true"><use href="#i-lock-open"/></svg>
       <p>
-        <strong>7 días de prueba gratuita</strong> al instalar la app: abre el temario, haz tests y
-        comprueba si es tu forma de estudiar. Después decides el plan, y se cancela desde el App Store
-        cuando quieras.
+        <strong>7 días de prueba gratuita</strong> al instalar la app: abre el temario, haz los tests de
+        prueba y comprueba si es tu forma de estudiar. Después eliges plan —<strong> al año ahorras un 17 %</strong>—
+        y se cancela desde el App Store cuando quieras.
       </p>
     </div>
   </div>
@@ -1564,7 +1745,11 @@ html.js .reveal.is-in {
     <div class="acc faq reveal">
       <details class="acc-item">
         <summary>¿Qué puedo hacer durante la prueba gratuita?<svg class="ic ic-chev" style="margin-left:auto" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary>
-        <div class="acc-body">Durante 7 días tienes la app completa: temario, tests de todos los temas, simulacros y repaso. No pedimos tarjeta para empezar.</div>
+        <div class="acc-body">Durante 7 días entras en la app y haces los tests de prueba de cada bloque del temario, con su corrección razonada y tus estadísticas. Es suficiente para ver si te cunde la forma de estudiar, y no pedimos tarjeta para empezar.</div>
+      </details>
+      <details class="acc-item">
+        <summary>¿Qué diferencia hay entre pagar al mes y al año?<svg class="ic ic-chev" style="margin-left:auto" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary>
+        <div class="acc-body">El contenido es idéntico: solo cambia el cobro. Al año pagas una vez y ahorras un 17 % frente a doce meses sueltos: Básico 49,99 € (4,17 €/mes), Plus 99,99 € (8,33 €/mes) y Max 199,99 € (16,67 €/mes). Puedes empezar al mes y pasarte al anual cuando quieras.</div>
       </details>
       <details class="acc-item">
         <summary>¿Puedo cambiar de oposición más adelante?<svg class="ic ic-chev" style="margin-left:auto" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary>
@@ -1654,6 +1839,57 @@ html.js .reveal.is-in {
       root.setAttribute('data-theme', next);
       try { localStorage.setItem('op-theme', next); } catch (e) {}
     });
+  }
+
+  /* --- Facturación mensual / anual --- */
+  var billing = document.getElementById('billing');
+  var plans = document.getElementById('plans');
+
+  if (billing && plans) {
+    var opts = Array.prototype.slice.call(billing.querySelectorAll('[data-billing-opt]'));
+    var thumb = billing.querySelector('.billing-thumb');
+
+    var placeThumb = function (btn) {
+      if (!thumb || !btn) return;
+      thumb.style.width = btn.offsetWidth + 'px';
+      thumb.style.transform = 'translateX(' + btn.offsetLeft + 'px)';
+    };
+
+    var setBilling = function (mode) {
+      plans.setAttribute('data-billing', mode);
+      opts.forEach(function (btn) {
+        var active = btn.getAttribute('data-billing-opt') === mode;
+        btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+        if (active) placeThumb(btn);
+      });
+      try { localStorage.setItem('op-billing', mode); } catch (e) {}
+    };
+
+    var stored = 'monthly';
+    try {
+      var s = localStorage.getItem('op-billing');
+      if (s === 'monthly' || s === 'annual') stored = s;
+    } catch (e) {}
+
+    opts.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        setBilling(btn.getAttribute('data-billing-opt'));
+      });
+    });
+
+    var current = function () { return plans.getAttribute('data-billing') || 'monthly'; };
+    var reposition = function () {
+      opts.forEach(function (btn) {
+        if (btn.getAttribute('data-billing-opt') === current()) placeThumb(btn);
+      });
+    };
+
+    if (thumb) thumb.style.transition = 'none';
+    setBilling(stored);
+    requestAnimationFrame(function () { if (thumb) thumb.style.transition = ''; });
+
+    window.addEventListener('resize', reposition, { passive: true });
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(reposition);
   }
 
   /* --- Borde de la barra al hacer scroll --- */
