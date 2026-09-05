@@ -27,6 +27,11 @@
   --accent-surface: #E8F0FE;
   --on-accent: #FFFFFF;
 
+  /* Degradado de los botones sólidos: en claro se cierra hacia un azul más
+     profundo para que el texto blanco mantenga contraste suficiente. */
+  --btn-grad-a: #2559C7;
+  --btn-grad-b: #2E6BE6;
+
   /* Fondos */
   --bg: #F6F9FE;
   --surface: #FFFFFF;
@@ -78,6 +83,8 @@
     color-scheme: dark;
     --accent: #5B95FF;
     --accent-soft: #2E6BE6;
+    --btn-grad-a: #5B95FF;
+    --btn-grad-b: #3F7CF0;
     --accent-surface: #1B2A47;
     --on-accent: #0B1220;
     --bg: #0B1220;
@@ -101,6 +108,8 @@
   color-scheme: dark;
   --accent: #5B95FF;
   --accent-soft: #2E6BE6;
+  --btn-grad-a: #5B95FF;
+  --btn-grad-b: #3F7CF0;
   --accent-surface: #1B2A47;
   --on-accent: #0B1220;
   --bg: #0B1220;
@@ -248,7 +257,9 @@ section { position: relative; }
   box-shadow: var(--shadow-accent);
 }
 
-.brand em { font-style: normal; color: var(--accent); }
+/* El nombre va como una sola palabra: los dos colores no lo separan. */
+.brand-name { display: inline-block; white-space: nowrap; }
+.brand-name em { font-style: normal; color: var(--accent); }
 
 .nav {
   margin-left: auto;
@@ -257,7 +268,9 @@ section { position: relative; }
   gap: 4px;
 }
 
-.nav a {
+/* Solo los enlaces de navegación: si esto alcanzara al botón de descarga,
+   ganaría en especificidad a .btn-primary y le comería el color y el fondo. */
+.nav .nav-link {
   padding: 8px 12px;
   border-radius: var(--r-pill);
   font-size: 15px;
@@ -267,7 +280,7 @@ section { position: relative; }
   transition: color .22s var(--ease-standard), background .22s var(--ease-standard);
 }
 
-.nav a:hover { color: var(--text-primary); background: var(--surface-elevated); }
+.nav .nav-link:hover { color: var(--text-primary); background: var(--surface-elevated); }
 
 @media (max-width: 860px) { .nav .nav-link { display: none; } }
 
@@ -319,7 +332,7 @@ section { position: relative; }
 
 .btn-primary {
   color: #FFFFFF;
-  background: linear-gradient(135deg, var(--accent), var(--accent-soft));
+  background: linear-gradient(135deg, var(--btn-grad-a), var(--btn-grad-b));
   box-shadow: var(--shadow-accent);
 }
 
@@ -895,7 +908,7 @@ section { position: relative; }
   gap: 6px;
   padding: 5px 14px;
   border-radius: var(--r-pill);
-  background: linear-gradient(135deg, var(--accent), var(--accent-soft));
+  background: linear-gradient(135deg, var(--btn-grad-a), var(--btn-grad-b));
   color: #FFFFFF;
   font-size: 12px;
   font-weight: 800;
@@ -1078,7 +1091,7 @@ html.js .reveal.is-in {
   <div class="wrap topbar-inner">
     <a class="brand" href="#inicio">
       <span class="brand-mark"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>
-      Oposita<em>Plus</em>
+      <span class="brand-name">Oposita<em>Plus</em></span>
     </a>
     <nav class="nav">
       <a class="nav-link" href="#contenido">Contenido</a>
@@ -1108,12 +1121,12 @@ html.js .reveal.is-in {
         Actualizado a la última convocatoria
       </span>
 
-      <h1>Estudia el tema.<br>Haz el test.<br><span class="grad">Aprueba tu plaza.</span></h1>
+      <h1>Estudia el tema.<br>Haz el test.<br><span class="grad">¡Consigue tu plaza!</span></h1>
 
       <p class="hero-sub">
         La aplicación para preparar las oposiciones de la <strong>Región de Murcia</strong> y del
         <strong>Servicio Murciano de Salud</strong>. Cada tema trae su explicación, sus puntos clave,
-        los artículos que hay que saberse y tres tests para comprobar que te ha quedado.
+        los artículos que hay que saberse y cientos de preguntas tests para comprobar que te ha quedado.
       </p>
 
       <div class="hero-actions">
@@ -1269,12 +1282,12 @@ html.js .reveal.is-in {
         <details class="acc-item">
           <summary>
             <svg class="ic ic-lead" aria-hidden="true"><use href="#i-list-rect"/></svg>
-            3 tests de 20 preguntas
+            Mínimo 3 tests de 20 preguntas
             <span class="acc-sub">siempre a la vista</span>
             <svg class="ic ic-chev" aria-hidden="true"><use href="#i-chevron-down"/></svg>
           </summary>
           <div class="acc-body">
-            Cada tema tiene sus tres tests de veinte preguntas, con corrección razonada y la
+            Cada tema tiene mínimo sus tres tests de veinte preguntas, con corrección razonada y la
             referencia normativa de cada respuesta. Repítelos las veces que quieras: lo que fallas
             se guarda para el repaso.
             <div class="tag-row">
@@ -1399,7 +1412,7 @@ html.js .reveal.is-in {
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow">Para quién es</span>
-      <h2>Dos administraciones, más de ochenta plazas</h2>
+      <h2>Dos administraciones, más de ochenta categorías</h2>
       <p>
         Eliges tu oposición y la app te monta el temario que le corresponde: su parte general y su
         parte específica, con el progreso separado de cualquier otra que lleves.
@@ -1450,7 +1463,7 @@ html.js .reveal.is-in {
   <div class="wrap">
     <div class="section-head reveal" style="max-width:64ch">
       <span class="eyebrow">Precios</span>
-      <h2>Empieza gratis. Sigue por menos de lo que cuesta un temario en papel.</h2>
+      <h2>Empieza gratis. Sigue por menos de lo que cuestan otras apps o academias.</h2>
       <p>Todos los planes incluyen el temario completo y los tests sin límite. La diferencia es cuántas oposiciones puedes preparar a la vez.</p>
     </div>
 
@@ -1583,9 +1596,9 @@ html.js .reveal.is-in {
     <div class="closing reveal">
       <span class="chip">
         <svg class="ic" aria-hidden="true"><use href="#i-target"/></svg>
-        Tu plaza empieza por un tema
+        ¡Consigue tu plaza aquí!
       </span>
-      <h2>Descarga OpositaPlus y estudia hoy el primer tema</h2>
+      <h2>Descarga OpositaPlus y estudia ya el primer tema</h2>
       <p>
         Siete días gratis para probarlo con tu oposición. Si te cunde, sigues desde 4,99 € al mes;
         si no, no pagas nada.
