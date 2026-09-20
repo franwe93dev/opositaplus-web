@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>OpositaPlus</title>
-<meta name="description" content="Prepara tu plaza en la Región de Murcia y el Servicio Murciano de Salud: temario explicado y tests actualizados a la última convocatoria. 7 días gratis.">
+<meta name="description" content="Prepara tu plaza en la Región de Murcia y el Servicio Murciano de Salud: temario explicado y tests actualizados a la última convocatoria. Empieza gratis, sin caducidad.">
 <meta name="theme-color" content="#2E6BE6">
 <meta property="og:title" content="OpositaPlus">
 <meta property="og:description" content="Temario y tests para las oposiciones de la Región de Murcia y el Servicio Murciano de Salud, actualizados a la última convocatoria.">
@@ -1067,7 +1067,7 @@ section { position: relative; }
 
 .plan-foot { font-size: 12.5px; color: var(--text-tertiary); text-align: center; }
 
-.trial-strip {
+.free-strip {
   margin-top: var(--sp-xl);
   display: flex;
   flex-wrap: wrap;
@@ -1081,9 +1081,9 @@ section { position: relative; }
   text-align: center;
 }
 
-.trial-strip strong { color: var(--text-primary); }
-.trial-strip p { font-size: 15px; color: var(--text-secondary); }
-.trial-strip .ic { color: var(--accent); font-size: 26px; }
+.free-strip strong { color: var(--text-primary); }
+.free-strip p { font-size: 15px; color: var(--text-secondary); }
+.free-strip .ic { color: var(--accent); font-size: 26px; }
 
 /* ---------- FAQ ---------- */
 
@@ -1139,6 +1139,30 @@ footer {
 .foot-links { display: flex; flex-wrap: wrap; gap: var(--sp-l); }
 .foot-links a { text-decoration: none; font-weight: 600; }
 .foot-links a:hover { color: var(--accent); }
+
+.foot-social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-m);
+  flex-basis: 100%;
+  padding-top: var(--sp-l);
+  border-top: 1px solid var(--separator);
+}
+
+.foot-social span { font-weight: 700; color: var(--text-secondary); }
+
+.foot-social a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-surface);
+  padding: 6px 14px;
+  border-radius: 999px;
+  transition: transform .25s var(--ease-standard);
+}
+
+.foot-social a:hover { transform: translateY(-2px); }
 
 /* ---------- Aparición al hacer scroll (DS.Animation.staggered) ---------- */
 
@@ -1264,7 +1288,7 @@ html.js .reveal.is-in {
 
       <p class="hero-note">
         <svg class="ic" aria-hidden="true"><use href="#i-check-circle"/></svg>
-        7 días gratis, sin tarjeta. Cancela cuando quieras.
+        Gratis para siempre, sin tarjeta. Suscríbete solo si quieres el temario completo.
       </p>
     </div>
 
@@ -1586,7 +1610,7 @@ html.js .reveal.is-in {
     <div class="section-head reveal" style="max-width:64ch">
       <span class="eyebrow">Precios</span>
       <h2>Empieza gratis. Sigue por menos de lo que cuestan otras apps o academias.</h2>
-      <p>Empieza con la prueba gratuita y, si te cunde, sigue con el plan que necesites. Todos incluyen el temario completo y los tests sin límite: la diferencia es cuántas oposiciones puedes preparar a la vez.</p>
+      <p>Empieza por el plan gratuito, que no caduca, y sigue con el de pago que necesites si quieres el temario entero. Todos los de pago incluyen el temario completo y los tests sin límite: la diferencia es cuántas oposiciones puedes preparar a la vez.</p>
     </div>
 
     <div class="billing-wrap reveal">
@@ -1605,26 +1629,26 @@ html.js .reveal.is-in {
         <div class="plan-head">
           <div class="plan-name">
             <svg class="ic" aria-hidden="true"><use href="#i-lock-open"/></svg>
-            Prueba
+            Gratis
           </div>
           <div class="plan-for">Para ver si es tu forma de estudiar.</div>
         </div>
         <div class="price-block">
-          <div class="price"><b>0 €</b><span>/ 7 días</span></div>
-          <div class="price-note">Sin pagar nada por adelantado</div>
+          <div class="price"><b>0 €</b><span>/ siempre</span></div>
+          <div class="price-note">Sin tarjeta y sin fecha de caducidad</div>
         </div>
         <div class="plan-divider"></div>
         <ul>
-          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><b>7 días</b> desde que instalas la app</span></li>
-          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><b>Tests de prueba</b> de cada bloque del temario</span></li>
-          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Introducción y puntos clave de los temas de muestra</span></li>
-          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Corrección razonada y estadísticas de tus aciertos</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><b>Primer test</b> del primer tema de la parte general</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><b>Primer test</b> del primer tema de la parte específica</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Introducción y puntos clave de esos dos temas</span></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Corrección razonada, repaso de fallos y estadísticas</span></li>
         </ul>
         <a class="btn btn-secondary" href="#descargar">
           <svg class="ic" aria-hidden="true"><use href="#i-sparkles"/></svg>
-          Probar gratis
+          Empezar gratis
         </a>
-        <div class="plan-foot">Al acabar decides el plan; si no, no se cobra nada</div>
+        <div class="plan-foot">Sin caducidad: si no te suscribes, sigue ahí</div>
       </article>
 
       <article class="plan reveal">
@@ -1650,7 +1674,7 @@ html.js .reveal.is-in {
           <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Estadísticas de aciertos y evolución semanal</span></li>
         </ul>
         <a class="btn btn-secondary" href="#descargar">Elegir Básico</a>
-        <div class="plan-foot">Empiezas con los 7 días de prueba</div>
+        <div class="plan-foot">Se renueva solo; se cancela cuando quieras</div>
       </article>
 
       <article class="plan plan-featured reveal">
@@ -1712,7 +1736,7 @@ html.js .reveal.is-in {
           <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Soporte prioritario por correo</span></li>
         </ul>
         <a class="btn btn-secondary" href="#descargar">Elegir Max</a>
-        <div class="plan-foot">Empiezas con los 7 días de prueba</div>
+        <div class="plan-foot">Se renueva solo; se cancela cuando quieras</div>
       </article>
     </div>
 
@@ -1723,12 +1747,13 @@ html.js .reveal.is-in {
       <span><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg>Sin anuncios y sin permanencia</span>
     </div>
 
-    <div class="trial-strip reveal">
+    <div class="free-strip reveal">
       <svg class="ic" aria-hidden="true"><use href="#i-lock-open"/></svg>
       <p>
-        <strong>7 días de prueba gratuita</strong> al instalar la app: abre el temario, haz los tests de
-        prueba y comprueba si es tu forma de estudiar. Después eliges plan —<strong> al año ahorras un 17 %</strong>—
-        y se cancela desde el App Store cuando quieras.
+        <strong>El plan gratuito no caduca</strong>: el primer test del primer tema de la parte general
+        y el de la específica siguen abiertos siempre, con su corrección y tus estadísticas. Si quieres el
+        temario entero, eliges plan —<strong>al año ahorras un 17 %</strong>— y se cancela desde el App Store
+        cuando quieras.
       </p>
     </div>
   </div>
@@ -1744,8 +1769,8 @@ html.js .reveal.is-in {
 
     <div class="acc faq reveal">
       <details class="acc-item">
-        <summary>¿Qué puedo hacer durante la prueba gratuita?<svg class="ic ic-chev" style="margin-left:auto" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary>
-        <div class="acc-body">Durante 7 días entras en la app y haces los tests de prueba de cada bloque del temario, con su corrección razonada y tus estadísticas. Es suficiente para ver si te cunde la forma de estudiar, y no pedimos tarjeta para empezar.</div>
+        <summary>¿Qué puedo hacer sin suscribirme?<svg class="ic ic-chev" style="margin-left:auto" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary>
+        <div class="acc-body">El primer test del primer tema de la parte general y el de la parte específica, con su corrección razonada, el repaso de tus fallos y tus estadísticas. No caduca: no hay periodo de prueba que se acabe ni tarjeta que dejar. La suscripción abre el resto del temario, los tests de bloque, los rápidos, los simulacros y los exámenes oficiales.</div>
       </details>
       <details class="acc-item">
         <summary>¿Qué diferencia hay entre pagar al mes y al año?<svg class="ic ic-chev" style="margin-left:auto" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary>
@@ -1785,8 +1810,8 @@ html.js .reveal.is-in {
       </span>
       <h2>Descarga OpositaPlus y estudia ya el primer tema</h2>
       <p>
-        Siete días gratis para probarlo con tu oposición. Si te cunde, sigues desde 4,99 € al mes;
-        si no, no pagas nada.
+        El primer test de cada parte es gratis para siempre, sin tarjeta. Si te cunde, abres todo
+        el temario desde 4,99 € al mes.
       </p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#descargar">
@@ -1818,6 +1843,12 @@ html.js .reveal.is-in {
       <a href="privacidad.html">Privacidad</a>
       <a href="terminos.html">Términos</a>
       <a href="aviso-legal.html">Aviso legal</a>
+    </div>
+    <div class="foot-social">
+      <span>Síguenos</span>
+      <a href="https://www.instagram.com/opositaplus" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/share/19Rfscavkd/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://x.com/opositaplus" target="_blank" rel="noopener">X</a>
     </div>
   </div>
 </footer>

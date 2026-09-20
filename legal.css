@@ -568,6 +568,30 @@ footer {
 .foot-links a { text-decoration: none; font-weight: 600; }
 .foot-links a:hover { color: var(--accent); }
 
+.foot-social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-m);
+  flex-basis: 100%;
+  padding-top: var(--sp-l);
+  border-top: 1px solid var(--separator);
+}
+
+.foot-social span { font-weight: 700; color: var(--text-secondary); }
+
+.foot-social a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-surface);
+  padding: 6px 14px;
+  border-radius: 999px;
+  transition: transform .25s var(--ease-standard);
+}
+
+.foot-social a:hover { transform: translateY(-2px); }
+
 /* ---------- Aparición al hacer scroll ---------- */
 
 html.js .reveal { opacity: 0; transform: translateY(16px); }
