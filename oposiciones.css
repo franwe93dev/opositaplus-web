@@ -1,0 +1,144 @@
+/* ============================================================
+   OpositaPlus · Páginas de oposición
+   Se apoya en legal.css: aquí solo lo propio del catálogo.
+   ============================================================ */
+
+.crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+  font-size: 13.5px;
+  color: var(--text-tertiary);
+}
+.crumbs a { color: var(--text-tertiary); text-decoration: none; }
+.crumbs a:hover { color: var(--accent); }
+.crumbs span[aria-current] { color: var(--text-secondary); font-weight: 600; }
+
+.op-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: var(--r-pill);
+  background: var(--accent-surface);
+  color: var(--accent);
+  font-size: 12.5px;
+  font-weight: 800;
+  letter-spacing: .02em;
+}
+
+.op-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 26px 0 8px;
+}
+@media (max-width: 720px) { .op-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+.op-stat {
+  padding: 16px 18px;
+  border-radius: var(--r-m);
+  background: var(--surface);
+  border: 1px solid var(--separator);
+  box-shadow: var(--shadow);
+}
+.op-stat b {
+  display: block;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--accent);
+}
+.op-stat span { display: block; margin-top: 4px; font-size: 13px; color: var(--text-secondary); font-weight: 600; }
+
+.op-source {
+  margin: 8px 0 0;
+  padding: 20px 22px;
+  border-radius: var(--r-m);
+  background: var(--surface-elevated, var(--surface));
+  border: 1px solid var(--separator);
+}
+.op-source h2 { margin: 0 0 12px; font-size: 17px; }
+.op-source dl { display: grid; gap: 10px; margin: 0; }
+.op-source dt {
+  font-size: 12px; font-weight: 800; letter-spacing: .04em;
+  text-transform: uppercase; color: var(--text-tertiary);
+}
+.op-source dd { margin: 2px 0 0; font-size: 15px; color: var(--text-primary); }
+.op-source a { color: var(--accent); font-weight: 700; }
+
+.temario-block { margin-top: 34px; }
+.temario-block > h2 { margin: 0 0 4px; }
+.temario-block > p.sub { margin: 0 0 16px; color: var(--text-secondary); font-size: 15px; }
+
+.temario-list { margin: 0; padding: 0; list-style: none; counter-reset: tema; }
+.temario-list li {
+  display: flex;
+  gap: 14px;
+  align-items: baseline;
+  padding: 12px 4px;
+  border-bottom: 1px solid var(--separator);
+  font-size: 15.5px;
+  color: var(--text-primary);
+}
+.temario-list li:last-child { border-bottom: 0; }
+.temario-list .n {
+  flex: none;
+  min-width: 2.4em;
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  color: var(--accent);
+  font-size: 13.5px;
+}
+.temario-list .q {
+  margin-left: auto;
+  flex: none;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--text-tertiary);
+  white-space: nowrap;
+}
+
+.op-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; margin-top: 18px; }
+
+.op-card {
+  display: block;
+  padding: 18px 20px;
+  border-radius: var(--r-m);
+  background: var(--surface);
+  border: 1px solid var(--separator);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  transition: transform .22s var(--ease-standard, ease), box-shadow .22s var(--ease-standard, ease), border-color .22s;
+}
+.op-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg, var(--shadow)); border-color: var(--border); }
+.op-card b { display: block; font-size: 16px; color: var(--text-primary); line-height: 1.35; }
+.op-card .meta { display: block; margin-top: 8px; font-size: 13px; color: var(--text-secondary); }
+.op-card .op-pill { margin-top: 12px; }
+
+.op-cta {
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: var(--r-card, 24px);
+  background: linear-gradient(135deg, var(--btn-grad-a, #2559C7), var(--btn-grad-b, #2E6BE6));
+  color: #fff;
+  text-align: center;
+}
+.op-cta h2 { margin: 0 0 10px; color: #fff; }
+.op-cta p { margin: 0 auto 18px; max-width: 56ch; color: rgba(255, 255, 255, .92); }
+.op-cta .btn-secondary { background: #fff; color: var(--btn-grad-a, #2559C7); border-color: transparent; }
+
+.letter-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 6px; }
+.letter-nav a {
+  padding: 6px 14px;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--separator);
+  background: var(--surface);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+.letter-nav a:hover { color: var(--accent); border-color: var(--accent); }

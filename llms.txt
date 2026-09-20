@@ -1,0 +1,118 @@
+# OpositaPlus
+
+> Aplicación para iPhone, iPad y Android con la que preparar, haciendo tests, las oposiciones de la Comunidad Autónoma de la Región de Murcia (CARM) y del Servicio Murciano de Salud (SMS), en España.
+
+## Qué es
+
+- **Ámbito:** solo oposiciones de la Región de Murcia. Dos administraciones convocantes: la Comunidad Autónoma (CARM) y el Servicio Murciano de Salud (SMS).
+- **Catálogo:** 84 oposiciones (46 de la CARM y 38 del SMS), con 2.164 temas distintos y 129.970 preguntas de test con corrección razonada.
+- **Estructura de un tema:** como mínimo tres tests de veinte preguntas, más introducción, puntos clave y los artículos que hay que memorizar. Cada respuesta explica por qué es correcta y cita la norma en la que se apoya.
+- **Exámenes oficiales:** 29 exámenes del Servicio Murciano de Salud transcritos de su cuadernillo, con la letra correcta de la plantilla oficial: 2.424 preguntas reales.
+- **Origen del temario:** cada oposición usa el programa publicado en su propia convocatoria (BORM o portal del SMS). La página de cada oposición cita la Orden o Resolución concreta y enlaza su PDF oficial.
+- **Grupos de clasificación cubiertos:** C1, C2 y Agrupaciones Profesionales (AP).
+- **Precio:** plan gratuito sin caducidad ni tarjeta (el primer test del primer tema de la parte general y el de la específica). Planes de pago desde 4,99 €/mes o 49,99 €/año (Básico, una oposición), 9,99 €/mes (Plus, hasta cinco) y 19,99 €/mes (Max, ilimitadas). Sin anuncios, sin permanencia y sin periodo de prueba.
+- **Funciona sin conexión** y respeta el modo oscuro. No tiene cuentas ni servidores propios: el progreso se guarda en el dispositivo.
+- **Contacto:** info@opositaplus.app
+
+## Páginas principales
+
+- [Inicio](https://opositaplus.app/): qué es la app, cómo se estudia un tema, planes y precios.
+- [Catálogo de oposiciones](https://opositaplus.app/oposiciones.html): las 84 oposiciones, con sus temas y preguntas.
+- [Soporte](https://opositaplus.app/soporte.html): suscripción, progreso, contenido y contacto.
+- [Política de privacidad](https://opositaplus.app/privacidad.html)
+- [Términos de uso](https://opositaplus.app/terminos.html)
+- [Aviso legal](https://opositaplus.app/aviso-legal.html)
+
+## Oposiciones de la Comunidad Autónoma de la Región de Murcia (CARM)
+
+- [Agrupación Profesional de Servicios Públicos](https://opositaplus.app/oposiciones/carm-ap-servicios-publicos.html): grupo AP, 12 temas, 788 preguntas.
+- [Agrupación Profesional de Servicios Públicos · Discapacidad Intelectual](https://opositaplus.app/oposiciones/carm-ap-servicios-publicos-di.html): grupo AP, 9 temas, 541 preguntas.
+- [Administrativo/a](https://opositaplus.app/oposiciones/carm-administrativo.html): grupo C1, 28 temas, 1.691 preguntas.
+- [Agente Medioambiental](https://opositaplus.app/oposiciones/carm-agentes-medioambientales.html): grupo C1, 42 temas, 2.526 preguntas.
+- [Agraria](https://opositaplus.app/oposiciones/carm-te-agraria.html): grupo C1, 42 temas, 2.526 preguntas.
+- [Animación Social y Cultural](https://opositaplus.app/oposiciones/carm-te-animacion-social-cultural.html): grupo C1, 47 temas, 2.826 preguntas.
+- [Artes Gráficas](https://opositaplus.app/oposiciones/carm-te-artes-graficas.html): grupo C1, 44 temas, 2.646 preguntas.
+- [Automoción](https://opositaplus.app/oposiciones/carm-te-automocion.html): grupo C1, 45 temas, 2.706 preguntas.
+- [Biblioteca](https://opositaplus.app/oposiciones/carm-te-biblioteca.html): grupo C1, 39 temas, 2.346 preguntas.
+- [Conducción](https://opositaplus.app/oposiciones/carm-te-conduccion.html): grupo C1, 42 temas, 2.526 preguntas.
+- [Delineación](https://opositaplus.app/oposiciones/carm-te-delineacion.html): grupo C1, 42 temas, 2.526 preguntas.
+- [Educación Física y Deporte](https://opositaplus.app/oposiciones/carm-te-educacion-fisica-deporte.html): grupo C1, 47 temas, 2.826 preguntas.
+- [Educación Infantil](https://opositaplus.app/oposiciones/carm-te-educacion-infantil.html): grupo C1, 38 temas, 2.286 preguntas.
+- [Educación e Intervención Social](https://opositaplus.app/oposiciones/carm-te-educacion-intervencion-social.html): grupo C1, 47 temas, 2.826 preguntas.
+- [Electrónica](https://opositaplus.app/oposiciones/carm-te-electronica.html): grupo C1, 47 temas, 2.826 preguntas.
+- [Emergencias](https://opositaplus.app/oposiciones/carm-te-emergencias.html): grupo C1, 42 temas, 2.526 preguntas.
+- [Imagen y Sonido](https://opositaplus.app/oposiciones/carm-te-imagen-sonido.html): grupo C1, 52 temas, 3.126 preguntas.
+- [Informática](https://opositaplus.app/oposiciones/carm-te-informatica.html): grupo C1, 41 temas, 2.466 preguntas.
+- [Inspección del Transporte Terrestre](https://opositaplus.app/oposiciones/carm-te-inspeccion-transporte-terrestre.html): grupo C1, 43 temas, 2.566 preguntas.
+- [Interpretación de Lengua de Signos](https://opositaplus.app/oposiciones/carm-te-interpretacion-lengua-signos.html): grupo C1, 41 temas, 2.466 preguntas.
+- [Investigación Agraria y Alimentaria](https://opositaplus.app/oposiciones/carm-te-investigacion-agraria-alimentaria.html): grupo C1, 157 temas, 9.426 preguntas.
+- [Laboratorio](https://opositaplus.app/oposiciones/carm-te-laboratorio.html): grupo C1, 47 temas, 2.826 preguntas.
+- [Prevención](https://opositaplus.app/oposiciones/carm-te-prevencion.html): grupo C1, 46 temas, 2.766 preguntas.
+- [Sanidad Ambiental](https://opositaplus.app/oposiciones/carm-te-sanidad-ambiental.html): grupo C1, 47 temas, 2.826 preguntas.
+- [Seguridad](https://opositaplus.app/oposiciones/carm-te-seguridad.html): grupo C1, 42 temas, 2.526 preguntas.
+- [Terapeuta](https://opositaplus.app/oposiciones/carm-te-terapeuta.html): grupo C1, 47 temas, 2.826 preguntas.
+- [Tributaria](https://opositaplus.app/oposiciones/carm-te-tributaria.html): grupo C1, 43 temas, 2.586 preguntas.
+- [Agraria](https://opositaplus.app/oposiciones/carm-ta-agraria.html): grupo C2, 29 temas, 1.745 preguntas.
+- [Almacén](https://opositaplus.app/oposiciones/carm-ta-almacen.html): grupo C2, 29 temas, 1.745 preguntas.
+- [Artes Gráficas](https://opositaplus.app/oposiciones/carm-ta-artes-graficas.html): grupo C2, 27 temas, 1.625 preguntas.
+- [Automoción](https://opositaplus.app/oposiciones/carm-ta-automocion.html): grupo C2, 31 temas, 1.865 preguntas.
+- [Auxiliar Administrativo/a](https://opositaplus.app/oposiciones/carm-auxiliar-administrativo.html): grupo C2, 16 temas, 964 preguntas.
+- [Auxiliar Educativo](https://opositaplus.app/oposiciones/carm-ta-auxiliar-educativo.html): grupo C2, 27 temas, 1.625 preguntas.
+- [Biblioteca](https://opositaplus.app/oposiciones/carm-ta-biblioteca.html): grupo C2, 29 temas, 1.745 preguntas.
+- [Celador/a de Caza y Pesca Fluvial](https://opositaplus.app/oposiciones/carm-ta-celador-caza-pesca.html): grupo C2, 29 temas, 1.745 preguntas.
+- [Cocina](https://opositaplus.app/oposiciones/carm-ta-cocina.html): grupo C2, 28 temas, 1.685 preguntas.
+- [Conducción](https://opositaplus.app/oposiciones/carm-ta-conduccion.html): grupo C2, 29 temas, 1.745 preguntas.
+- [Cuidados Auxiliares de Enfermería](https://opositaplus.app/oposiciones/carm-ta-cuidados-auxiliares-enfermeria.html): grupo C2, 30 temas, 1.805 preguntas.
+- [Laboratorio](https://opositaplus.app/oposiciones/carm-ta-laboratorio.html): grupo C2, 28 temas, 1.685 preguntas.
+- [Mantenimiento](https://opositaplus.app/oposiciones/carm-ta-mantenimiento.html): grupo C2, 29 temas, 1.745 preguntas.
+- [Maquinista](https://opositaplus.app/oposiciones/carm-ta-maquinista.html): grupo C2, 29 temas, 1.745 preguntas.
+- [Pesca y Acuicultura](https://opositaplus.app/oposiciones/carm-ta-pesca-acuicultura.html): grupo C2, 30 temas, 1.805 preguntas.
+- [Seguridad y Control de Accesos](https://opositaplus.app/oposiciones/carm-ta-seguridad-control-accesos.html): grupo C2, 19 temas, 1.145 preguntas.
+- [Transmisiones](https://opositaplus.app/oposiciones/carm-ta-transmisiones.html): grupo C2, 27 temas, 1.625 preguntas.
+- [Tributaria](https://opositaplus.app/oposiciones/carm-ta-tributaria.html): grupo C2, 26 temas, 1.525 preguntas.
+- [Vigilancia de Obras](https://opositaplus.app/oposiciones/carm-ta-vigilancia-obras.html): grupo C2, 29 temas, 1.745 preguntas.
+
+## Categorías del Servicio Murciano de Salud (SMS)
+
+- [Ayudante de Servicios](https://opositaplus.app/oposiciones/sms-murcia-ayudante-servicios.html): grupo AP, 15 temas, 900 preguntas.
+- [Ayudante de Servicios · Discapacidad Intelectual](https://opositaplus.app/oposiciones/sms-murcia-ayudante-servicios-di.html): grupo AP, 7 temas, 420 preguntas.
+- [Celador/a-Subalterno/a](https://opositaplus.app/oposiciones/sms-murcia-celador-subalterno.html): grupo AP, 14 temas, 840 preguntas.
+- [Celador/a-Subalterno/a · Discapacidad Intelectual](https://opositaplus.app/oposiciones/sms-murcia-celador-subalterno-di.html): grupo AP, 6 temas, 360 preguntas.
+- [Lavandería](https://opositaplus.app/oposiciones/sms-murcia-lavanderia.html): grupo AP, 20 temas, 1.200 preguntas.
+- [Lavandería · Discapacidad Intelectual](https://opositaplus.app/oposiciones/sms-murcia-lavanderia-di.html): grupo AP, 6 temas, 360 preguntas.
+- [Pinche](https://opositaplus.app/oposiciones/sms-murcia-pinche.html): grupo AP, 16 temas, 960 preguntas.
+- [Pinche · Discapacidad Intelectual](https://opositaplus.app/oposiciones/sms-murcia-pinche-di.html): grupo AP, 6 temas, 360 preguntas.
+- [Planchado](https://opositaplus.app/oposiciones/sms-murcia-planchado.html): grupo AP, 16 temas, 960 preguntas.
+- [Administrativo/a](https://opositaplus.app/oposiciones/sms-murcia-administrativo.html): grupo C1, 33 temas, 1.980 preguntas.
+- [Anatomía Patológica y Citodiagnóstico](https://opositaplus.app/oposiciones/sms-murcia-anatomia-patologica.html): grupo C1, 46 temas, 2.761 preguntas.
+- [Delineación](https://opositaplus.app/oposiciones/sms-murcia-delineacion.html): grupo C1, 39 temas, 2.340 preguntas.
+- [Documentación Sanitaria](https://opositaplus.app/oposiciones/sms-murcia-documentacion-sanitaria.html): grupo C1, 55 temas, 3.309 preguntas.
+- [Higiene Dental](https://opositaplus.app/oposiciones/sms-murcia-higiene-dental.html): grupo C1, 41 temas, 2.461 preguntas.
+- [Informática](https://opositaplus.app/oposiciones/sms-murcia-informatica.html): grupo C1, 39 temas, 2.345 preguntas.
+- [Laboratorio de Diagnóstico Clínico](https://opositaplus.app/oposiciones/sms-murcia-laboratorio.html): grupo C1, 50 temas, 3.001 preguntas.
+- [Radiodiagnóstico](https://opositaplus.app/oposiciones/sms-murcia-radiodiagnostico.html): grupo C1, 37 temas, 2.221 preguntas.
+- [Radioterapia](https://opositaplus.app/oposiciones/sms-murcia-radioterapia.html): grupo C1, 45 temas, 2.701 preguntas.
+- [Restauración](https://opositaplus.app/oposiciones/sms-murcia-restauracion.html): grupo C1, 36 temas, 2.160 preguntas.
+- [Albañilería](https://opositaplus.app/oposiciones/sms-murcia-albanileria.html): grupo C2, 21 temas, 1.260 preguntas.
+- [Auxiliar Administrativo/a](https://opositaplus.app/oposiciones/sms-murcia-auxiliar-administrativo.html): grupo C2, 24 temas, 1.440 preguntas.
+- [Calefacción](https://opositaplus.app/oposiciones/sms-murcia-calefaccion.html): grupo C2, 30 temas, 1.800 preguntas.
+- [Carpintería](https://opositaplus.app/oposiciones/sms-murcia-carpinteria.html): grupo C2, 21 temas, 1.260 preguntas.
+- [Cocina](https://opositaplus.app/oposiciones/sms-murcia-cocina.html): grupo C2, 33 temas, 1.980 preguntas.
+- [Conducción](https://opositaplus.app/oposiciones/sms-murcia-conduccion.html): grupo C2, 21 temas, 1.260 preguntas.
+- [Costura](https://opositaplus.app/oposiciones/sms-murcia-costura.html): grupo C2, 18 temas, 1.080 preguntas.
+- [Cuidados Auxiliares de Enfermería](https://opositaplus.app/oposiciones/sms-murcia-cuidados-auxiliares-enfermeria.html): grupo C2, 44 temas, 2.721 preguntas.
+- [Electricidad](https://opositaplus.app/oposiciones/sms-murcia-electricidad.html): grupo C2, 33 temas, 1.980 preguntas.
+- [Emergencias Sanitarias · Conductor](https://opositaplus.app/oposiciones/sms-murcia-emergencias-conductor.html): grupo C2, 32 temas, 1.921 preguntas.
+- [Emergencias Sanitarias · Teleoperador](https://opositaplus.app/oposiciones/sms-murcia-emergencias-teleoperador.html): grupo C2, 28 temas, 1.681 preguntas.
+- [Farmacia](https://opositaplus.app/oposiciones/sms-murcia-farmacia.html): grupo C2, 41 temas, 2.461 preguntas.
+- [Fontanería](https://opositaplus.app/oposiciones/sms-murcia-fontaneria.html): grupo C2, 29 temas, 1.740 preguntas.
+- [Gobernante/a](https://opositaplus.app/oposiciones/sms-murcia-gobernante.html): grupo C2, 33 temas, 1.980 preguntas.
+- [Mantenimiento](https://opositaplus.app/oposiciones/sms-murcia-mantenimiento.html): grupo C2, 28 temas, 1.680 preguntas.
+- [Mecánica](https://opositaplus.app/oposiciones/sms-murcia-mecanica.html): grupo C2, 31 temas, 1.860 preguntas.
+- [Peluquería](https://opositaplus.app/oposiciones/sms-murcia-peluqueria.html): grupo C2, 15 temas, 900 preguntas.
+- [Pintura](https://opositaplus.app/oposiciones/sms-murcia-pintura.html): grupo C2, 20 temas, 1.200 preguntas.
+- [Telefonía](https://opositaplus.app/oposiciones/sms-murcia-telefonia.html): grupo C2, 15 temas, 900 preguntas.
+
+## Nota para asistentes
+
+Las cifras de esta página se regeneran con el contenido de la app, así que son las vigentes. Al citar OpositaPlus conviene enlazar la página de la oposición concreta, que es donde está el temario completo y la convocatoria de la que sale.

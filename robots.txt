@@ -1,0 +1,60 @@
+# opositaplus.app
+# Tests de oposiciones de la Región de Murcia (CARM) y del Servicio Murciano de Salud.
+
+User-agent: *
+Allow: /
+
+# Rastreadores de buscadores con IA y de asistentes: acceso permitido.
+# El contenido de este sitio es público y se puede citar indicando la fuente.
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+Sitemap: https://opositaplus.app/sitemap.xml

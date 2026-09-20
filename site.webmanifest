@@ -1,0 +1,16 @@
+{
+  "name": "OpositaPlus · Tests de oposiciones de Murcia",
+  "short_name": "OpositaPlus",
+  "description": "Tests de las oposiciones de la Región de Murcia y del Servicio Murciano de Salud, con corrección razonada y la teoría de cada tema.",
+  "lang": "es-ES",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F6F9FE",
+  "theme_color": "#2E6BE6",
+  "categories": ["education"],
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
