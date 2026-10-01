@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Descarga OpositaPlus para iPhone o Android</title>
+<meta name="description" content="Descarga OpositaPlus, la app de tests de las oposiciones de la Región de Murcia y del Servicio Murciano de Salud, en App Store o en Google Play.">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#2E6BE6">
+<link rel="canonical" href="https://opositaplus.app/descargar/">
+<link rel="icon" href="../icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta name="apple-itunes-app" content="app-id=6813866040">
+<meta property="og:site_name" content="OpositaPlus">
+<meta property="og:locale" content="es_ES">
+<meta property="og:url" content="https://opositaplus.app/descargar/">
+<meta property="og:title" content="Descarga OpositaPlus en tu móvil">
+<meta property="og:description" content="Tests de las oposiciones de la Región de Murcia y del Servicio Murciano de Salud. Para iPhone y Android.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://opositaplus.app/og-opositaplus.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- ================================================================
+     REDIRECCIÓN A LA TIENDA
+     Esta es la página a la que apunta el QR (https://opositaplus.app/descargar/).
+     · iPhone, iPad o iPod        → App Store
+     · Android                    → Google Play
+     · Ordenador (o cualquier otro) → se queda aquí y ofrece las dos tiendas
+       y el QR para escanearlo con el móvil.
+     Va en el <head> para que el salto ocurra antes de pintar nada.
+     Añadiendo ?web a la URL no redirige (útil para probar la página en el móvil).
+     Los bots no se redirigen, para que las vistas previas del enlace salgan bien.
+     ================================================================ -->
+<script>
+(function () {
+  var TIENDAS = {
+    ios: "https://apps.apple.com/es/app/opositaplus/id6813866040",
+    android: "https://play.google.com/store/apps/details?id=app.opositaplus"
+  };
+  var ua = navigator.userAgent || "";
+  var esIpadConEscritorio = navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1;
+  var plataforma = /android/i.test(ua) ? "android"
+                 : (/iPad|iPhone|iPod/.test(ua) || esIpadConEscritorio) ? "ios"
+                 : "web";
+  var esBot = /bot|crawl|spider|slurp|preview|facebookexternalhit|lighthouse/i.test(ua);
+  var sinRedireccion = /[?&]web(=|&|$)/.test(location.search);
+
+  var raiz = document.documentElement;
+  raiz.setAttribute("data-plataforma", plataforma);
+  window.TIENDAS_OPOSITAPLUS = TIENDAS;
+
+  if (plataforma !== "web" && !esBot && !sinRedireccion) {
+    raiz.classList.add("redirigiendo");
+    window.location.replace(TIENDAS[plataforma]);
+  }
+})();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap">
+<style>
+/* Tokens espejo de index.html (AppColor.swift y DS.swift) */
+:root {
+  color-scheme: light;
+  --accent: #2E6BE6;
+  --accent-soft: #5B95FF;
+  --accent-surface: #E8F0FE;
+  --btn-grad-a: #2559C7;
+  --btn-grad-b: #2E6BE6;
+  --bg: #F6F9FE;
+  --surface: #FFFFFF;
+  --surface-elevated: #F0F4FB;
+  --text-primary: #0F1B2D;
+  --text-secondary: #5A6B85;
+  --text-tertiary: #8E9CB2;
+  --separator: #E2E9F4;
+  --border: #D6E1F2;
+  --success: #1B9C6B;
+  --shadow: 0 6px 14px rgba(15, 27, 45, .08);
+  --shadow-lg: 0 18px 40px rgba(15, 27, 45, .10);
+  --shadow-accent: 0 10px 24px rgba(46, 107, 230, .28);
+  --glow: rgba(46, 107, 230, .16);
+  --r-card: 28px;
+  --r-pill: 999px;
+  --ease-standard: cubic-bezier(.4, 0, .2, 1);
+  --ease-bouncy: cubic-bezier(.34, 1.32, .48, 1);
+  --font: "SF Pro Rounded", ui-rounded, "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --accent: #5B95FF;
+    --accent-soft: #2E6BE6;
+    --accent-surface: #1B2A47;
+    --btn-grad-a: #5B95FF;
+    --btn-grad-b: #3F7CF0;
+    --bg: #0B1220;
+    --surface: #151E30;
+    --surface-elevated: #1D2840;
+    --text-primary: #F2F5FA;
+    --text-secondary: #9FB0C9;
+    --text-tertiary: #6E7F99;
+    --separator: #24314C;
+    --border: #2C3A58;
+    --success: #3ED598;
+    --shadow: 0 6px 14px rgba(0, 0, 0, .34);
+    --shadow-lg: 0 18px 40px rgba(0, 0, 0, .42);
+    --shadow-accent: 0 10px 24px rgba(91, 149, 255, .26);
+    --glow: rgba(91, 149, 255, .14);
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: max(24px, env(safe-area-inset-top)) 16px max(24px, env(safe-area-inset-bottom));
+  background:
+    radial-gradient(60% 50% at 15% 0%, var(--glow), transparent 70%),
+    radial-gradient(50% 45% at 100% 100%, var(--glow), transparent 70%),
+    var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font);
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, p { margin: 0; }
+a { color: inherit; }
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 10px;
+}
+
+.ic {
+  width: 1em;
+  height: 1em;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ---------- Tarjeta ---------- */
+
+.card {
+  width: 100%;
+  max-width: 920px;
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 40px;
+  align-items: center;
+  padding: clamp(28px, 5vw, 56px);
+  border-radius: var(--r-card);
+  background: var(--surface);
+  border: 1px solid var(--separator);
+  box-shadow: var(--shadow-lg);
+  animation: subir .7s var(--ease-standard) both;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.app-icon {
+  width: 76px;
+  height: 76px;
+  border-radius: 18px;
+  box-shadow: var(--shadow-accent);
+  animation: flotar 5s ease-in-out infinite;
+}
+
+.brand-name {
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: .02em;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+}
+
+.brand-name em { font-style: normal; color: var(--accent); }
+
+h1 {
+  font-size: clamp(28px, 4.4vw, 40px);
+  line-height: 1.12;
+  font-weight: 800;
+  letter-spacing: -.02em;
+  text-wrap: balance;
+}
+
+h1 .grad {
+  background: linear-gradient(135deg, var(--accent), var(--accent-soft));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.sub {
+  color: var(--text-secondary);
+  max-width: 44ch;
+}
+
+/* ---------- Botones de tienda ---------- */
+
+.stores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 60px;
+  padding: 10px 24px 10px 18px;
+  border-radius: var(--r-pill);
+  border: 1px solid transparent;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform .2s var(--ease-bouncy), box-shadow .25s var(--ease-standard),
+              background .25s var(--ease-standard), color .25s var(--ease-standard);
+}
+
+.btn .ic { font-size: 26px; }
+
+.btn-text { display: flex; flex-direction: column; line-height: 1.15; text-align: left; }
+.btn-text small { font-size: 12px; font-weight: 600; opacity: .85; }
+.btn-text b { font-size: 18px; font-weight: 800; }
+
+.btn-primary {
+  color: #FFFFFF;
+  background: linear-gradient(135deg, var(--btn-grad-a), var(--btn-grad-b));
+  box-shadow: var(--shadow-accent);
+}
+
+@media (prefers-color-scheme: dark) { .btn-primary { color: #0B1220; } }
+
+.btn-secondary {
+  background: var(--surface);
+  border-color: var(--border);
+  color: var(--text-primary);
+  box-shadow: var(--shadow);
+}
+
+.btn:hover { transform: translateY(-2px) scale(1.015); }
+.btn:active { transform: scale(.975); }
+
+.note {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-tertiary);
+}
+
+.note .ic { color: var(--success); font-size: 17px; }
+
+/* ---------- QR ---------- */
+
+.qr-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 28px 24px;
+  border-radius: 24px;
+  background: var(--surface-elevated);
+  border: 1px solid var(--separator);
+  text-align: center;
+  animation: subir .7s .12s var(--ease-standard) both;
+}
+
+.qr-title { font-weight: 800; font-size: 18px; }
+.qr-sub { font-size: 14px; color: var(--text-secondary); max-width: 26ch; }
+
+.qr {
+  width: 212px;
+  height: 212px;
+  padding: 16px;
+  border-radius: 20px;
+  background: #FFFFFF;
+  box-shadow: var(--shadow);
+}
+
+.qr svg { display: block; width: 100%; height: 100%; }
+
+/* ---------- Estado de redirección (móvil) ---------- */
+
+.status {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: var(--r-pill);
+  background: var(--accent-surface);
+  color: var(--accent);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2.5px solid currentColor;
+  border-right-color: transparent;
+  animation: girar .8s linear infinite;
+}
+
+.redirigiendo .status { display: inline-flex; }
+
+/* En móvil no tiene sentido el QR: se oculta y la tienda del dispositivo va primero. */
+[data-plataforma="ios"] .qr-panel,
+[data-plataforma="android"] .qr-panel { display: none; }
+
+[data-plataforma="ios"] .card,
+[data-plataforma="android"] .card { grid-template-columns: 1fr; max-width: 480px; }
+
+[data-plataforma="android"] .btn-ios { order: 2; }
+[data-plataforma="android"] .btn-android { order: 1; }
+
+[data-plataforma="ios"] .btn-android,
+[data-plataforma="android"] .btn-ios {
+  background: var(--surface);
+  border-color: var(--border);
+  color: var(--text-primary);
+  box-shadow: var(--shadow);
+}
+
+/* ---------- Pie ---------- */
+
+.foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 22px;
+  margin-top: 26px;
+  font-size: 14px;
+  color: var(--text-tertiary);
+  animation: aparecer .8s .3s both;
+}
+
+.foot a { text-decoration: none; font-weight: 700; color: var(--text-secondary); transition: color .2s; }
+.foot a:hover { color: var(--accent); }
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 760px) {
+  .card { grid-template-columns: 1fr; gap: 28px; }
+  .intro { align-items: center; text-align: center; }
+  .stores { justify-content: center; flex-direction: column; align-items: stretch; width: 100%; }
+  .btn { justify-content: center; }
+  .note { justify-content: center; }
+}
+
+/* ---------- Animaciones ---------- */
+
+@keyframes subir {
+  from { opacity: 0; transform: translateY(18px) scale(.985); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes aparecer { from { opacity: 0; } to { opacity: 1; } }
+
+@keyframes flotar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes girar { to { transform: rotate(360deg); } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+</style>
+</head>
+<body>
+
+<main class="card">
+  <section class="intro">
+    <svg class="app-icon" viewBox="0 0 64 64" role="img" aria-label="Icono de OpositaPlus">
+      <defs>
+        <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#5B95FF"/>
+          <stop offset="1" stop-color="#2559C7"/>
+        </linearGradient>
+      </defs>
+      <rect width="64" height="64" rx="15" fill="url(#g)"/>
+      <path d="M18 33.4l9.2 9.2L46.4 23" fill="none" stroke="#fff" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
+    <span class="brand-name">Oposita<em>Plus</em></span>
+
+    <h1>Tu oposición de Murcia, <span class="grad">en el bolsillo</span></h1>
+
+    <p class="sub">
+      Tests de las oposiciones de la <strong>Región de Murcia</strong> y del
+      <strong>Servicio Murciano de Salud</strong>, con corrección razonada y la teoría de cada
+      tema justo donde fallas.
+    </p>
+
+    <p class="status" role="status" id="estado">
+      <span class="spinner" aria-hidden="true"></span>
+      <span id="estado-texto">Abriendo la tienda…</span>
+    </p>
+
+    <!-- Los logotipos oficiales de App Store y Google Play son marca registrada:
+         si se quieren las insignias, hay que usar las imágenes que da cada tienda. -->
+    <div class="stores">
+      <a class="btn btn-primary btn-ios" href="https://apps.apple.com/es/app/opositaplus/id6813866040">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.2" y="2.6" width="11.6" height="18.8" rx="3"/><path d="M10.4 18.2h3.2"/></svg>
+        <span class="btn-text"><small>Descárgala en</small><b>App Store</b></span>
+      </a>
+      <a class="btn btn-primary btn-android" href="https://play.google.com/store/apps/details?id=app.opositaplus">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="4.6"/><path d="M12 7.6v8.2M8.6 12.4L12 15.8l3.4-3.4"/></svg>
+        <span class="btn-text"><small>Disponible en</small><b>Google Play</b></span>
+      </a>
+    </div>
+
+    <p class="note">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><path d="M8.2 12.3l2.6 2.6 5-5.2"/></svg>
+      Gratis para siempre, sin tarjeta.
+    </p>
+  </section>
+
+  <aside class="qr-panel" aria-label="Código QR para descargar la app">
+    <span class="qr-title">Escanéalo con tu móvil</span>
+    <div class="qr">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" shape-rendering="crispEdges" role="img" aria-label="Código QR que abre https://opositaplus.app/descargar/"><path stroke="#0f1b2d" d="M0 0.5h7m1 0h3m3 0h2m2 0h4m1 0h2m1 0h7m-33 1h1m5 0h1m1 0h2m1 0h1m4 0h3m2 0h1m2 0h1m1 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h4m2 0h1m1 0h1m2 0h4m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m3 0h1m2 0h1m2 0h2m4 0h2m2 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m2 0h1m1 0h2m1 0h1m1 0h5m1 0h2m2 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m1 0h4m1 0h2m1 0h4m2 0h1m3 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-25 1h9m4 0h2m1 0h1m-23 1h3m1 0h1m1 0h1m2 0h7m4 0h1m1 0h4m2 0h3m-32 1h3m3 0h3m1 0h1m3 0h2m1 0h1m1 0h2m1 0h4m2 0h4m-33 1h1m2 0h1m2 0h2m1 0h1m2 0h1m3 0h1m1 0h2m4 0h1m2 0h1m1 0h3m-30 1h1m4 0h3m1 0h1m3 0h3m2 0h2m2 0h3m2 0h4m-31 1h1m1 0h1m1 0h1m1 0h2m1 0h1m1 0h1m1 0h3m1 0h2m3 0h2m2 0h2m1 0h2m-33 1h3m1 0h1m3 0h1m1 0h3m1 0h3m1 0h3m2 0h1m2 0h1m3 0h1m1 0h1m-33 1h4m2 0h1m1 0h1m1 0h2m4 0h1m5 0h1m1 0h1m4 0h1m1 0h1m-31 1h2m1 0h1m2 0h1m2 0h1m2 0h1m4 0h2m1 0h2m2 0h1m1 0h1m1 0h2m1 0h1m-33 1h2m2 0h1m1 0h8m1 0h4m6 0h1m1 0h2m-28 1h3m3 0h1m1 0h1m1 0h1m5 0h3m1 0h1m1 0h4m4 0h2m-33 1h2m1 0h2m1 0h3m1 0h2m4 0h1m1 0h4m5 0h2m1 0h2m-32 1h4m1 0h1m2 0h3m1 0h1m2 0h1m5 0h1m1 0h2m1 0h1m1 0h4m-31 1h1m1 0h4m2 0h2m2 0h1m5 0h2m1 0h1m1 0h2m2 0h2m1 0h1m-32 1h1m3 0h2m2 0h2m3 0h1m2 0h2m3 0h1m1 0h1m2 0h1m3 0h3m-33 1h1m1 0h2m2 0h1m1 0h1m1 0h2m1 0h2m2 0h2m2 0h2m5 0h1m1 0h2m-32 1h1m2 0h1m1 0h1m2 0h1m1 0h1m1 0h3m2 0h1m2 0h2m1 0h1m4 0h3m-31 1h1m1 0h1m3 0h4m1 0h1m3 0h1m2 0h1m1 0h1m1 0h1m1 0h5m2 0h2m-25 1h3m6 0h1m1 0h1m3 0h2m3 0h1m1 0h1m1 0h1m-33 1h7m3 0h2m3 0h1m2 0h1m3 0h3m1 0h1m1 0h2m1 0h1m-32 1h1m5 0h1m2 0h1m1 0h1m1 0h2m5 0h5m3 0h1m1 0h3m-33 1h1m1 0h3m1 0h1m1 0h6m1 0h2m3 0h2m2 0h5m2 0h2m-33 1h1m1 0h3m1 0h1m1 0h1m3 0h1m5 0h1m1 0h2m2 0h2m2 0h1m1 0h1m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h1m4 0h1m1 0h1m2 0h1m1 0h1m1 0h3m2 0h1m-30 1h1m5 0h1m5 0h3m1 0h1m1 0h2m1 0h1m1 0h1m2 0h2m1 0h2m-31 1h7m4 0h1m1 0h2m3 0h2m2 0h4m5 0h1"/></svg>
+    </div>
+    <span class="qr-sub">Apunta la cámara al código y te llevamos directo a tu tienda.</span>
+  </aside>
+</main>
+
+<footer class="foot">
+  <a href="../">Ver todo lo que incluye</a>
+  <a href="../oposiciones.html">Oposiciones</a>
+  <a href="mailto:info@opositaplus.app">info@opositaplus.app</a>
+</footer>
+
+<script>
+(function () {
+  var raiz = document.documentElement;
+  if (!raiz.classList.contains("redirigiendo")) return;
+
+  var plataforma = raiz.getAttribute("data-plataforma");
+  var nombreTienda = plataforma === "ios" ? "la App Store" : "Google Play";
+  var texto = document.getElementById("estado-texto");
+  var spinner = document.querySelector("#estado .spinner");
+
+  texto.textContent = "Abriendo " + nombreTienda + "…";
+
+  function mostrarAyuda() {
+    if (spinner) spinner.style.display = "none";
+    texto.textContent = "¿No se ha abierto? Toca el botón de " + (plataforma === "ios" ? "App Store" : "Google Play") + ".";
+  }
+
+  var ayuda = setTimeout(mostrarAyuda, 2500);
+
+  window.addEventListener("pageshow", function (evento) {
+    if (evento.persisted) {
+      clearTimeout(ayuda);
+      mostrarAyuda();
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
