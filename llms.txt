@@ -5,9 +5,9 @@
 ## Qué es
 
 - **Ámbito:** solo oposiciones de la Región de Murcia. Dos administraciones convocantes: la Comunidad Autónoma (CARM) y el Servicio Murciano de Salud (SMS).
-- **Catálogo:** 84 oposiciones (46 de la CARM y 38 del SMS), con 2.164 temas distintos y 129.970 preguntas de test con corrección razonada.
+- **Catálogo:** 84 oposiciones (46 de la CARM y 38 del SMS), con 2.164 temas distintos y 130.574 preguntas de test con corrección razonada.
 - **Estructura de un tema:** como mínimo tres tests de veinte preguntas, más introducción, puntos clave y los artículos que hay que memorizar. Cada respuesta explica por qué es correcta y cita la norma en la que se apoya.
-- **Exámenes oficiales:** 29 exámenes del Servicio Murciano de Salud transcritos de su cuadernillo, con la letra correcta de la plantilla oficial: 2.424 preguntas reales.
+- **Exámenes oficiales:** 66 exámenes del Servicio Murciano de Salud transcritos de su cuadernillo, con la letra correcta de la plantilla oficial: 5.415 preguntas reales.
 - **Origen del temario:** cada oposición usa el programa publicado en su propia convocatoria (BORM o portal del SMS). La página de cada oposición cita la Orden o Resolución concreta y enlaza su PDF oficial.
 - **Grupos de clasificación cubiertos:** C1, C2 y Agrupaciones Profesionales (AP).
 - **Precio:** plan gratuito sin caducidad ni tarjeta (el primer test del primer tema de la parte general y el de la específica). Planes de pago desde 4,99 €/mes o 49,99 €/año (Básico, una oposición), 9,99 €/mes (Plus, hasta cinco) y 19,99 €/mes (Max, ilimitadas). Sin anuncios, sin permanencia y sin periodo de prueba.
@@ -74,15 +74,15 @@
 
 ## Categorías del Servicio Murciano de Salud (SMS)
 
-- [Ayudante de Servicios](https://opositaplus.app/oposiciones/sms-murcia-ayudante-servicios.html): grupo AP, 15 temas, 900 preguntas.
+- [Ayudante de Servicios](https://opositaplus.app/oposiciones/sms-murcia-ayudante-servicios.html): grupo AP, 15 temas, 1.139 preguntas.
 - [Ayudante de Servicios · Discapacidad Intelectual](https://opositaplus.app/oposiciones/sms-murcia-ayudante-servicios-di.html): grupo AP, 7 temas, 420 preguntas.
-- [Celador/a-Subalterno/a](https://opositaplus.app/oposiciones/sms-murcia-celador-subalterno.html): grupo AP, 14 temas, 840 preguntas.
+- [Celador/a-Subalterno/a](https://opositaplus.app/oposiciones/sms-murcia-celador-subalterno.html): grupo AP, 14 temas, 1.444 preguntas.
 - [Celador/a-Subalterno/a · Discapacidad Intelectual](https://opositaplus.app/oposiciones/sms-murcia-celador-subalterno-di.html): grupo AP, 6 temas, 360 preguntas.
-- [Lavandería](https://opositaplus.app/oposiciones/sms-murcia-lavanderia.html): grupo AP, 20 temas, 1.200 preguntas.
+- [Lavandería](https://opositaplus.app/oposiciones/sms-murcia-lavanderia.html): grupo AP, 20 temas, 1.439 preguntas.
 - [Lavandería · Discapacidad Intelectual](https://opositaplus.app/oposiciones/sms-murcia-lavanderia-di.html): grupo AP, 6 temas, 360 preguntas.
-- [Pinche](https://opositaplus.app/oposiciones/sms-murcia-pinche.html): grupo AP, 16 temas, 960 preguntas.
+- [Pinche](https://opositaplus.app/oposiciones/sms-murcia-pinche.html): grupo AP, 16 temas, 1.199 preguntas.
 - [Pinche · Discapacidad Intelectual](https://opositaplus.app/oposiciones/sms-murcia-pinche-di.html): grupo AP, 6 temas, 360 preguntas.
-- [Planchado](https://opositaplus.app/oposiciones/sms-murcia-planchado.html): grupo AP, 16 temas, 960 preguntas.
+- [Planchado](https://opositaplus.app/oposiciones/sms-murcia-planchado.html): grupo AP, 16 temas, 1.199 preguntas.
 - [Administrativo/a](https://opositaplus.app/oposiciones/sms-murcia-administrativo.html): grupo C1, 33 temas, 1.980 preguntas.
 - [Anatomía Patológica y Citodiagnóstico](https://opositaplus.app/oposiciones/sms-murcia-anatomia-patologica.html): grupo C1, 46 temas, 2.761 preguntas.
 - [Delineación](https://opositaplus.app/oposiciones/sms-murcia-delineacion.html): grupo C1, 39 temas, 2.340 preguntas.
