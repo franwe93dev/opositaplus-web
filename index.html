@@ -475,6 +475,58 @@ section { position: relative; }
   font-weight: 700;
 }
 
+/* ---------- Aviso: plantilla no oficial del examen de TCAE ---------- */
+.exam-alert { padding-top: clamp(16px, 3vw, 28px); }
+.exam-alert-card {
+  display: flex; align-items: center; gap: var(--sp-l);
+  padding: var(--sp-l) var(--sp-xl);
+  border-radius: var(--r-l);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--warning);
+  box-shadow: var(--shadow);
+  animation: rise .6s var(--ease-bouncy) both;
+}
+.exam-alert-icon {
+  flex: none; display: grid; place-items: center;
+  width: 46px; height: 46px; border-radius: var(--r-s);
+  background: color-mix(in srgb, var(--warning) 16%, transparent);
+  color: var(--warning); font-size: 24px;
+}
+.exam-alert-text { flex: 1; min-width: 0; }
+.exam-alert-text strong { display: block; font-size: 17px; line-height: 1.3; }
+.exam-alert-text p { margin: 2px 0 0; color: var(--text-secondary); font-size: 14.5px; }
+.exam-alert-actions { display: flex; gap: var(--sp-s); flex-wrap: wrap; }
+@media (max-width: 760px) {
+  .exam-alert-card { flex-wrap: wrap; padding: var(--sp-l); }
+  .exam-alert-actions { width: 100%; }
+  .exam-alert-actions .btn { flex: 1; }
+}
+
+.exam-modal {
+  width: min(460px, calc(100% - 32px));
+  padding: 0; border: 1px solid var(--border); border-radius: var(--r-card);
+  background: var(--surface); color: var(--text-primary);
+  box-shadow: var(--shadow-lg);
+}
+.exam-modal::backdrop { background: rgba(11, 18, 32, .45); backdrop-filter: blur(3px); }
+.exam-modal[open] { animation: rise .45s var(--ease-bouncy) both; }
+.exam-modal-body { position: relative; padding: var(--sp-xxl) var(--sp-xl) var(--sp-xl); text-align: center; }
+.exam-modal-body .exam-alert-icon { margin: 0 auto var(--sp-l); width: 56px; height: 56px; font-size: 28px; border-radius: var(--r-m); }
+.exam-modal-body h2 { font-size: 22px; line-height: 1.2; margin: 0; }
+.exam-modal-body p { margin: var(--sp-s) 0 var(--sp-xl); color: var(--text-secondary); font-size: 15px; }
+.exam-modal-actions { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-s); }
+.exam-modal-later {
+  margin-top: var(--sp-m); width: 100%; height: 44px;
+  border-radius: var(--r-pill); border: 1px solid var(--border);
+  background: transparent; color: var(--text-secondary);
+  font: inherit; font-size: 15px; font-weight: 700; cursor: pointer;
+}
+.exam-modal-later:hover { color: var(--accent); }
+@media (prefers-reduced-motion: reduce) {
+  .exam-alert-card, .exam-modal[open] { animation: none; }
+}
+
 /* Animación de entrada del hero */
 .hero-copy > * { animation: rise .7s var(--ease-bouncy) both; }
 .hero-copy > *:nth-child(1) { animation-delay: .02s; }
@@ -1393,7 +1445,7 @@ html.js .reveal.is-in {
       "name": "¿Qué oposiciones de la Región de Murcia incluye?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Más de ochenta: 46 oposiciones de la Administración regional —Cuerpo Administrativo, Auxiliares Administrativos, Agentes Medioambientales, las opciones de Técnicos Especialistas y de Técnicos Auxiliares y las Agrupaciones Profesionales— y 38 categorías del Servicio Murciano de Salud, desde Cuidados Auxiliares de Enfermería hasta Radiodiagnóstico, Laboratorio o Celador. Puedes verlas una a una, con su temario completo."
+        "text": "Más de ochenta: 46 oposiciones de la Administración regional —Cuerpo Administrativo, Auxiliares Administrativos, Agentes Medioambientales, las opciones de Técnicos Especialistas y de Técnicos Auxiliares y las Agrupaciones Profesionales— y 41 categorías del Servicio Murciano de Salud, desde Cuidados Auxiliares de Enfermería hasta Radiodiagnóstico, Laboratorio o Celador. Puedes verlas una a una, con su temario completo."
       }
     },
     {
@@ -1510,6 +1562,7 @@ html.js .reveal.is-in {
     <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2.8l7.4 2.8v6c0 4.4-3 8.2-7.4 9.6-4.4-1.4-7.4-5.2-7.4-9.6v-6z"/><path d="M8.9 11.9l2.2 2.2 4-4.4"/></symbol>
     <symbol id="i-person" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4.2"/><path d="M4.6 20.4a7.6 7.6 0 0114.8 0"/></symbol>
     <symbol id="i-infinity" viewBox="0 0 24 24"><path d="M8.6 8.4a3.6 3.6 0 100 7.2c2.4 0 3.4-1.8 3.4-3.6s1-3.6 3.4-3.6a3.6 3.6 0 110 7.2c-2.4 0-3.4-1.8-3.4-3.6"/></symbol>
+    <symbol id="i-exclaim" viewBox="0 0 24 24"><path d="M10.4 4.2L2.9 17.4A1.9 1.9 0 004.5 20.2h15a1.9 1.9 0 001.6-2.8L13.6 4.2a1.9 1.9 0 00-3.2 0z"/><path d="M12 9.4v4.6"/><circle cx="12" cy="17" r=".9" fill="currentColor" stroke="none"/></symbol>
   </defs>
 </svg>
 
@@ -1544,6 +1597,42 @@ html.js .reveal.is-in {
 </header>
 
 <main id="inicio">
+
+<!-- ============ Aviso: plantilla no oficial del examen de TCAE ============ -->
+<section class="exam-alert" aria-labelledby="examAlertTitle">
+  <div class="wrap">
+    <div class="exam-alert-card" role="status">
+      <span class="exam-alert-icon" aria-hidden="true"><svg class="ic"><use href="#i-exclaim"/></svg></span>
+      <div class="exam-alert-text">
+        <strong id="examAlertTitle">Plantilla de respuestas no oficial del examen de TCAE del SMS</strong>
+        <p>Ya puedes comprobar tu examen del 18 de octubre mientras el tribunal publica la plantilla oficial.</p>
+      </div>
+      <div class="exam-alert-actions">
+        <a class="btn btn-primary btn-sm" href="examenes/examen-TCAE-SMS-2026-respuestas-A-OpositaPlus.pdf" target="_blank" rel="noopener">
+          <svg class="ic" aria-hidden="true"><use href="#i-doc-badge"/></svg>
+          Modelo A
+        </a>
+        <a class="btn btn-primary btn-sm" href="examenes/examen-TCAE-SMS-2026-respuestas-B-OpositaPlus.pdf" target="_blank" rel="noopener">
+          <svg class="ic" aria-hidden="true"><use href="#i-doc-badge"/></svg>
+          Modelo B
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<dialog class="exam-modal" id="examModal" aria-labelledby="examModalTitle">
+  <div class="exam-modal-body">
+    <span class="exam-alert-icon" aria-hidden="true"><svg class="ic"><use href="#i-exclaim"/></svg></span>
+    <h2 id="examModalTitle">Examen de TCAE del SMS: plantilla no oficial</h2>
+    <p>Hemos resuelto las 85 preguntas del examen del 18 de octubre. Elige tu modelo para ver las respuestas.</p>
+    <div class="exam-modal-actions">
+      <a class="btn btn-primary btn-sm" href="examenes/examen-TCAE-SMS-2026-respuestas-A-OpositaPlus.pdf" target="_blank" rel="noopener">Modelo A</a>
+      <a class="btn btn-primary btn-sm" href="examenes/examen-TCAE-SMS-2026-respuestas-B-OpositaPlus.pdf" target="_blank" rel="noopener">Modelo B</a>
+    </div>
+    <button class="exam-modal-later" type="button" id="examModalClose">Ahora no</button>
+  </div>
+</dialog>
 
 <!-- ============ Hero ============ -->
 <section class="hero">
@@ -1861,7 +1950,7 @@ html.js .reveal.is-in {
         Eliges tu oposición y la app te monta el temario que le corresponde: su parte general y su
         parte específica, con el progreso separado de cualquier otra que lleves. Son
         <strong>46 oposiciones de la Comunidad Autónoma de la Región de Murcia</strong> y
-        <strong>38 categorías del Servicio Murciano de Salud</strong>, cada una con el programa de su
+        <strong>41 categorías del Servicio Murciano de Salud</strong>, cada una con el programa de su
         propia convocatoria.
       </p>
       <p style="margin-top:14px">
@@ -1887,8 +1976,9 @@ html.js .reveal.is-in {
       <article class="card">
         <span class="icon-box"><svg class="ic" aria-hidden="true"><use href="#i-cross-case"/></svg></span>
         <h3>Servicio Murciano de Salud</h3>
-        <p>Personal estatutario del SMS: técnicos especialistas, técnicos auxiliares y personal de servicios, con su Estatuto Marco.</p>
+        <p>Personal estatutario del SMS: diplomados, técnicos especialistas, técnicos auxiliares y personal de servicios, con su Estatuto Marco.</p>
         <div class="group-pills">
+          <span class="group-pill">A2 <small>Diplomado</small></span>
           <span class="group-pill">C1 <small>Técnico Especialista</small></span>
           <span class="group-pill">C2 <small>Técnico Auxiliar</small></span>
           <span class="group-pill">E <small>Personal de Servicios</small></span>
@@ -1898,8 +1988,9 @@ html.js .reveal.is-in {
       <article class="card">
         <span class="icon-box"><svg class="ic" aria-hidden="true"><use href="#i-stack"/></svg></span>
         <h3>Tu grupo, con su nombre</h3>
-        <p>Cada convocatoria usa su propia terminología —C1, C2, D, E o Agrupaciones Profesionales— y la app te la enseña tal y como la vas a leer en el boletín.</p>
+        <p>Cada convocatoria usa su propia terminología —A2, C1, C2, D, E o Agrupaciones Profesionales— y la app te la enseña tal y como la vas a leer en el boletín.</p>
         <div class="group-pills">
+          <span class="group-pill">A2</span>
           <span class="group-pill">C1</span>
           <span class="group-pill">C2</span>
           <span class="group-pill">D</span>
@@ -2081,7 +2172,7 @@ html.js .reveal.is-in {
       </details>
       <details class="acc-item">
         <summary>¿Qué oposiciones de la Región de Murcia incluye?<svg class="ic ic-chev" style="margin-left:auto" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary>
-        <div class="acc-body"><p>Más de ochenta: <strong>46 oposiciones de la Administración regional</strong> —Cuerpo Administrativo, Auxiliares Administrativos, Agentes Medioambientales, las opciones de Técnicos Especialistas y de Técnicos Auxiliares y las Agrupaciones Profesionales— y <strong>38 categorías del Servicio Murciano de Salud</strong>, desde Cuidados Auxiliares de Enfermería hasta Radiodiagnóstico, Laboratorio o Celador. Puedes verlas <a href="oposiciones.html">una a una, con su temario completo</a>.</p></div>
+        <div class="acc-body"><p>Más de ochenta: <strong>46 oposiciones de la Administración regional</strong> —Cuerpo Administrativo, Auxiliares Administrativos, Agentes Medioambientales, las opciones de Técnicos Especialistas y de Técnicos Auxiliares y las Agrupaciones Profesionales— y <strong>41 categorías del Servicio Murciano de Salud</strong>, desde Cuidados Auxiliares de Enfermería hasta Radiodiagnóstico, Laboratorio o Celador. Puedes verlas <a href="oposiciones.html">una a una, con su temario completo</a>.</p></div>
       </details>
       <details class="acc-item">
         <summary>¿Cuántos temas y preguntas tiene?<svg class="ic ic-chev" style="margin-left:auto" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary>
@@ -2296,5 +2387,21 @@ html.js .reveal.is-in {
 })();
 </script>
 
+<script>
+(function () {
+  var modal = document.getElementById('examModal');
+  if (!modal || typeof modal.showModal !== 'function') return;
+  var key = 'opositaplus.avisoTcae2026.visto';
+  var seen = false;
+  try { seen = sessionStorage.getItem(key) === '1'; } catch (e) {}
+  if (seen) return;
+  function markSeen() { try { sessionStorage.setItem(key, '1'); } catch (e) {} }
+  document.getElementById('examModalClose').addEventListener('click', function () { modal.close(); });
+  modal.addEventListener('click', function (event) { if (event.target === modal) modal.close(); });
+  modal.addEventListener('close', markSeen);
+  modal.querySelectorAll('a').forEach(function (link) { link.addEventListener('click', function () { markSeen(); modal.close(); }); });
+  setTimeout(function () { modal.showModal(); }, 600);
+})();
+</script>
 </body>
 </html>
