@@ -475,7 +475,7 @@ section { position: relative; }
   font-weight: 700;
 }
 
-/* ---------- Aviso: plantilla no oficial del examen de TCAE ---------- */
+/* ---------- Aviso: plantilla oficial del examen de TCAE ---------- */
 .exam-alert { padding-top: clamp(16px, 3vw, 28px); }
 .exam-alert-card {
   display: flex; align-items: center; gap: var(--sp-l);
@@ -483,15 +483,15 @@ section { position: relative; }
   border-radius: var(--r-l);
   background: var(--surface);
   border: 1px solid var(--border);
-  border-left: 5px solid var(--warning);
+  border-left: 5px solid var(--success);
   box-shadow: var(--shadow);
   animation: rise .6s var(--ease-bouncy) both;
 }
 .exam-alert-icon {
   flex: none; display: grid; place-items: center;
   width: 46px; height: 46px; border-radius: var(--r-s);
-  background: color-mix(in srgb, var(--warning) 16%, transparent);
-  color: var(--warning); font-size: 24px;
+  background: color-mix(in srgb, var(--success) 16%, transparent);
+  color: var(--success); font-size: 24px;
 }
 .exam-alert-text { flex: 1; min-width: 0; }
 .exam-alert-text strong { display: block; font-size: 17px; line-height: 1.3; }
@@ -1600,14 +1600,14 @@ html.js .reveal.is-in {
 
 <main id="inicio">
 
-<!-- ============ Aviso: plantilla no oficial del examen de TCAE ============ -->
+<!-- ============ Aviso: plantilla oficial del examen de TCAE ============ -->
 <section class="exam-alert" aria-labelledby="examAlertTitle">
   <div class="wrap">
     <div class="exam-alert-card" role="status">
-      <span class="exam-alert-icon" aria-hidden="true"><svg class="ic"><use href="#i-exclaim"/></svg></span>
+      <span class="exam-alert-icon" aria-hidden="true"><svg class="ic"><use href="#i-check-circle"/></svg></span>
       <div class="exam-alert-text">
-        <strong id="examAlertTitle">Plantilla de respuestas no oficial del examen de TCAE del SMS</strong>
-        <p>Marca lo que contestaste en el examen del 18 de octubre y te decimos tu nota al momento, con los fallos ya descontados.</p>
+        <strong id="examAlertTitle">Ya está la plantilla oficial del examen de TCAE del SMS</strong>
+        <p>Marca lo que contestaste en el examen del 18 de octubre y te decimos tu nota con la plantilla oficial del tribunal, con los fallos ya descontados.</p>
       </div>
       <div class="exam-alert-actions">
         <a class="btn btn-primary btn-sm" href="examenes/nota-tcae-2026/">
@@ -1629,9 +1629,9 @@ html.js .reveal.is-in {
 
 <dialog class="exam-modal" id="examModal" aria-labelledby="examModalTitle">
   <div class="exam-modal-body">
-    <span class="exam-alert-icon" aria-hidden="true"><svg class="ic"><use href="#i-exclaim"/></svg></span>
-    <h2 id="examModalTitle">Examen de TCAE del SMS: plantilla no oficial</h2>
-    <p>Hemos resuelto las 85 preguntas del examen del 18 de octubre. Marca lo que contestaste y calcula tu nota, o descarga la plantilla de tu modelo.</p>
+    <span class="exam-alert-icon" aria-hidden="true"><svg class="ic"><use href="#i-check-circle"/></svg></span>
+    <h2 id="examModalTitle">Examen de TCAE del SMS: ya hay plantilla oficial</h2>
+    <p>El tribunal ha publicado las respuestas del examen del 18 de octubre. Marca lo que contestaste y calcula tu nota, o descarga la plantilla de tu modelo.</p>
     <a class="btn btn-primary exam-modal-main" href="examenes/nota-tcae-2026/">
       <svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg>
       Calcular mi nota
@@ -2401,7 +2401,7 @@ html.js .reveal.is-in {
 (function () {
   var modal = document.getElementById('examModal');
   if (!modal || typeof modal.showModal !== 'function') return;
-  var key = 'opositaplus.avisoTcae2026.visto';
+  var key = 'opositaplus.avisoTcae2026.oficial.visto';
   var seen = false;
   try { seen = sessionStorage.getItem(key) === '1'; } catch (e) {}
   if (seen) return;
