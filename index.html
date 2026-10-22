@@ -502,31 +502,14 @@ section { position: relative; }
   .exam-alert-actions { width: 100%; display: grid; grid-template-columns: 1fr 1fr; }
   .exam-alert-actions .btn { white-space: nowrap; padding: 0 12px; }
   .exam-alert-actions .btn:first-child { grid-column: 1 / -1; }
+  .exam-alert-actions .btn:nth-child(2):last-child { grid-column: 1 / -1; }
 }
+.exam-alert-card.is-accent { border-left-color: var(--accent); }
+.exam-alert-card.is-accent .exam-alert-icon { background: var(--accent-surface); color: var(--accent); }
+.exam-alert + .exam-alert { padding-top: var(--sp-m); }
 
-.exam-modal {
-  width: min(460px, calc(100% - 32px));
-  padding: 0; border: 1px solid var(--border); border-radius: var(--r-card);
-  background: var(--surface); color: var(--text-primary);
-  box-shadow: var(--shadow-lg);
-}
-.exam-modal::backdrop { background: rgba(11, 18, 32, .45); backdrop-filter: blur(3px); }
-.exam-modal[open] { animation: rise .45s var(--ease-bouncy) both; }
-.exam-modal-body { position: relative; padding: var(--sp-xxl) var(--sp-xl) var(--sp-xl); text-align: center; }
-.exam-modal-body .exam-alert-icon { margin: 0 auto var(--sp-l); width: 56px; height: 56px; font-size: 28px; border-radius: var(--r-m); }
-.exam-modal-body h2 { font-size: 22px; line-height: 1.2; margin: 0; }
-.exam-modal-body p { margin: var(--sp-s) 0 var(--sp-xl); color: var(--text-secondary); font-size: 15px; }
-.exam-modal-actions { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-s); }
-.exam-modal-main { width: 100%; margin-bottom: var(--sp-s); }
-.exam-modal-later {
-  margin-top: var(--sp-m); width: 100%; height: 44px;
-  border-radius: var(--r-pill); border: 1px solid var(--border);
-  background: transparent; color: var(--text-secondary);
-  font: inherit; font-size: 15px; font-weight: 700; cursor: pointer;
-}
-.exam-modal-later:hover { color: var(--accent); }
 @media (prefers-reduced-motion: reduce) {
-  .exam-alert-card, .exam-modal[open] { animation: none; }
+  .exam-alert-card { animation: none; }
 }
 
 /* Animación de entrada del hero */
@@ -1600,6 +1583,29 @@ html.js .reveal.is-in {
 
 <main id="inicio">
 
+<!-- ============ Aviso: notas del examen de Administrativo de la CARM ============ -->
+<section class="exam-alert" aria-labelledby="admAlertTitle">
+  <div class="wrap">
+    <div class="exam-alert-card is-accent" role="status">
+      <span class="exam-alert-icon" aria-hidden="true"><svg class="ic"><use href="#i-list-rect"/></svg></span>
+      <div class="exam-alert-text">
+        <strong id="admAlertTitle">Ya están las notas del examen de Administrativo de la CARM</strong>
+        <p>Las dos partes en un solo listado: busca tu nota con las cifras de tu DNI y mira la 1ª parte, la 2ª (provisional) y el total.</p>
+      </div>
+      <div class="exam-alert-actions">
+        <a class="btn btn-primary btn-sm" href="examenes/notas-administrativo-carm-2026/">
+          <svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg>
+          Buscar mi nota
+        </a>
+        <a class="btn btn-secondary btn-sm" href="examenes/notas-Administrativo-CARM-2026-OpositaPlus.pdf" target="_blank" rel="noopener">
+          <svg class="ic" aria-hidden="true"><use href="#i-doc-badge"/></svg>
+          Listado en PDF
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ Aviso: plantilla oficial del examen de TCAE ============ -->
 <section class="exam-alert" aria-labelledby="examAlertTitle">
   <div class="wrap">
@@ -1627,22 +1633,6 @@ html.js .reveal.is-in {
   </div>
 </section>
 
-<dialog class="exam-modal" id="examModal" aria-labelledby="examModalTitle">
-  <div class="exam-modal-body">
-    <span class="exam-alert-icon" aria-hidden="true"><svg class="ic"><use href="#i-check-circle"/></svg></span>
-    <h2 id="examModalTitle">Examen de TCAE del SMS: ya hay plantilla oficial</h2>
-    <p>El tribunal ha publicado las respuestas del examen del 18 de octubre. Marca lo que contestaste y calcula tu nota, o descarga la plantilla de tu modelo.</p>
-    <a class="btn btn-primary exam-modal-main" href="examenes/nota-tcae-2026/">
-      <svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg>
-      Calcular mi nota
-    </a>
-    <div class="exam-modal-actions">
-      <a class="btn btn-secondary btn-sm" href="examenes/examen-TCAE-SMS-2026-respuestas-A-OpositaPlus.pdf" target="_blank" rel="noopener">PDF modelo A</a>
-      <a class="btn btn-secondary btn-sm" href="examenes/examen-TCAE-SMS-2026-respuestas-B-OpositaPlus.pdf" target="_blank" rel="noopener">PDF modelo B</a>
-    </div>
-    <button class="exam-modal-later" type="button" id="examModalClose">Ahora no</button>
-  </div>
-</dialog>
 
 <!-- ============ Hero ============ -->
 <section class="hero">
@@ -2397,21 +2387,5 @@ html.js .reveal.is-in {
 })();
 </script>
 
-<script>
-(function () {
-  var modal = document.getElementById('examModal');
-  if (!modal || typeof modal.showModal !== 'function') return;
-  var key = 'opositaplus.avisoTcae2026.oficial.visto';
-  var seen = false;
-  try { seen = sessionStorage.getItem(key) === '1'; } catch (e) {}
-  if (seen) return;
-  function markSeen() { try { sessionStorage.setItem(key, '1'); } catch (e) {} }
-  document.getElementById('examModalClose').addEventListener('click', function () { modal.close(); });
-  modal.addEventListener('click', function (event) { if (event.target === modal) modal.close(); });
-  modal.addEventListener('close', markSeen);
-  modal.querySelectorAll('a').forEach(function (link) { link.addEventListener('click', function () { markSeen(); modal.close(); }); });
-  setTimeout(function () { modal.showModal(); }, 600);
-})();
-</script>
 </body>
 </html>
