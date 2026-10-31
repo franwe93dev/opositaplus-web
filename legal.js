@@ -35,6 +35,28 @@
     window.addEventListener('scroll', onScroll, { passive: true });
   }
 
+  /* --- Test de muestra de las páginas de oposición --- */
+  Array.prototype.slice.call(document.querySelectorAll('.quiz-q')).forEach(function (q) {
+    var options = Array.prototype.slice.call(q.querySelectorAll('.quiz-opt'));
+    var verdict = q.querySelector('.quiz-verdict');
+    var solution = q.querySelector('.quiz-sol');
+    options.forEach(function (option) {
+      option.addEventListener('click', function () {
+        var right = option.hasAttribute('data-ok');
+        options.forEach(function (o) {
+          o.disabled = true;
+          if (o.hasAttribute('data-ok')) o.classList.add('is-right');
+        });
+        if (!right) option.classList.add('is-wrong');
+        if (verdict) {
+          verdict.textContent = right ? '¡Correcto!' : 'Incorrecto';
+          verdict.className = 'quiz-verdict ' + (right ? 'is-right' : 'is-wrong');
+        }
+        if (solution) solution.open = true;
+      });
+    });
+  });
+
   /* --- Aparición escalonada --- */
   var items = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
   var showAll = function () {
