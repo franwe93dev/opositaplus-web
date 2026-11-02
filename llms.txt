@@ -5,7 +5,7 @@
 ## Qué es
 
 - **Ámbito:** solo oposiciones de la Región de Murcia. Dos administraciones convocantes: la Comunidad Autónoma (CARM) y el Servicio Murciano de Salud (SMS).
-- **Catálogo:** 89 oposiciones (46 de la CARM y 43 del SMS), con 2.443 temas distintos y 172.634 preguntas de test con corrección razonada.
+- **Catálogo:** 91 oposiciones (46 de la CARM y 45 del SMS), con 2.533 temas distintos y 181.514 preguntas de test con corrección razonada.
 - **Estructura de un tema:** como mínimo tres tests de veinte preguntas, más introducción, puntos clave y los artículos que hay que memorizar. Cada respuesta explica por qué es correcta y cita la norma en la que se apoya.
 - **Exámenes oficiales:** 72 exámenes del Servicio Murciano de Salud transcritos de su cuadernillo, con la letra correcta de la plantilla oficial: 6.160 preguntas reales.
 - **Origen del temario:** cada oposición usa el programa publicado en su propia convocatoria (BORM o portal del SMS). La página de cada oposición cita la Orden o Resolución concreta y enlaza su PDF oficial.
@@ -17,7 +17,7 @@
 ## Páginas principales
 
 - [Inicio](https://opositaplus.app/): qué es la app, cómo se estudia un tema, planes y precios.
-- [Catálogo de oposiciones](https://opositaplus.app/oposiciones.html): las 89 oposiciones, con sus temas y preguntas.
+- [Catálogo de oposiciones](https://opositaplus.app/oposiciones.html): las 91 oposiciones, con sus temas y preguntas.
 - [Soporte](https://opositaplus.app/soporte.html): suscripción, progreso, contenido y contacto.
 - [Política de privacidad](https://opositaplus.app/privacidad.html)
 - [Términos de uso](https://opositaplus.app/terminos.html)
@@ -76,8 +76,10 @@
 
 - [Analista de Aplicaciones](https://opositaplus.app/oposiciones/sms-murcia-analista-aplicaciones.html): grupo A2, 59 temas, 3.580 preguntas.
 - [Enfermería](https://opositaplus.app/oposiciones/sms-murcia-enfermeria.html): grupo A2, 71 temas, 7.080 preguntas.
+- [Enfermería Familiar y Comunitaria](https://opositaplus.app/oposiciones/sms-murcia-enfermeria-familiar-comunitaria.html): grupo A2, 54 temas, 5.360 preguntas.
 - [Enfermería Obstétrico-Ginecológica (Matrón/a)](https://opositaplus.app/oposiciones/sms-murcia-matrona.html): grupo A2, 69 temas, 6.860 preguntas.
 - [Enfermería Pediátrica](https://opositaplus.app/oposiciones/sms-murcia-enfermeria-pediatrica.html): grupo A2, 53 temas, 5.300 preguntas.
+- [Enfermería de Salud Mental](https://opositaplus.app/oposiciones/sms-murcia-enfermeria-salud-mental.html): grupo A2, 66 temas, 6.520 preguntas.
 - [Gestión Administrativa](https://opositaplus.app/oposiciones/sms-murcia-gestion-administrativa.html): grupo A2, 57 temas, 5.700 preguntas.
 - [Ayudante de Servicios](https://opositaplus.app/oposiciones/sms-murcia-ayudante-servicios.html): grupo AP, 15 temas, 1.139 preguntas.
 - [Ayudante de Servicios · Discapacidad Intelectual](https://opositaplus.app/oposiciones/sms-murcia-ayudante-servicios-di.html): grupo AP, 7 temas, 700 preguntas.
