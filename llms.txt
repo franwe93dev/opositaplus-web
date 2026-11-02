@@ -5,7 +5,7 @@
 ## Qué es
 
 - **Ámbito:** solo oposiciones de la Región de Murcia. Dos administraciones convocantes: la Comunidad Autónoma (CARM) y el Servicio Murciano de Salud (SMS).
-- **Catálogo:** 91 oposiciones (46 de la CARM y 45 del SMS), con 2.533 temas distintos y 182.114 preguntas de test con corrección razonada.
+- **Catálogo:** 91 oposiciones (46 de la CARM y 45 del SMS), con 2.533 temas distintos y 182.711 preguntas de test con corrección razonada.
 - **Estructura de un tema:** como mínimo tres tests de veinte preguntas, más introducción, puntos clave y los artículos que hay que memorizar. Cada respuesta explica por qué es correcta y cita la norma en la que se apoya.
 - **Exámenes oficiales:** 72 exámenes del Servicio Murciano de Salud transcritos de su cuadernillo, con la letra correcta de la plantilla oficial: 6.160 preguntas reales.
 - **Origen del temario:** cada oposición usa el programa publicado en su propia convocatoria (BORM o portal del SMS). La página de cada oposición cita la Orden o Resolución concreta y enlaza su PDF oficial.
@@ -81,24 +81,24 @@
 - [Enfermería Pediátrica](https://opositaplus.app/oposiciones/sms-murcia-enfermeria-pediatrica.html): grupo A2, 53 temas, 5.300 preguntas.
 - [Enfermería de Salud Mental](https://opositaplus.app/oposiciones/sms-murcia-enfermeria-salud-mental.html): grupo A2, 66 temas, 6.520 preguntas.
 - [Gestión Administrativa](https://opositaplus.app/oposiciones/sms-murcia-gestion-administrativa.html): grupo A2, 57 temas, 5.700 preguntas.
-- [Ayudante de Servicios](https://opositaplus.app/oposiciones/sms-murcia-ayudante-servicios.html): grupo AP, 15 temas, 1.139 preguntas.
+- [Ayudante de Servicios](https://opositaplus.app/oposiciones/sms-murcia-ayudante-servicios.html): grupo AP, 15 temas, 1.176 preguntas.
 - [Ayudante de Servicios · Discapacidad Intelectual](https://opositaplus.app/oposiciones/sms-murcia-ayudante-servicios-di.html): grupo AP, 7 temas, 700 preguntas.
-- [Celador/a-Subalterno/a](https://opositaplus.app/oposiciones/sms-murcia-celador-subalterno.html): grupo AP, 14 temas, 1.444 preguntas.
+- [Celador/a-Subalterno/a](https://opositaplus.app/oposiciones/sms-murcia-celador-subalterno.html): grupo AP, 14 temas, 1.481 preguntas.
 - [Celador/a-Subalterno/a · Discapacidad Intelectual](https://opositaplus.app/oposiciones/sms-murcia-celador-subalterno-di.html): grupo AP, 6 temas, 600 preguntas.
-- [Lavandería](https://opositaplus.app/oposiciones/sms-murcia-lavanderia.html): grupo AP, 20 temas, 1.439 preguntas.
+- [Lavandería](https://opositaplus.app/oposiciones/sms-murcia-lavanderia.html): grupo AP, 20 temas, 1.476 preguntas.
 - [Lavandería · Discapacidad Intelectual](https://opositaplus.app/oposiciones/sms-murcia-lavanderia-di.html): grupo AP, 6 temas, 600 preguntas.
-- [Pinche](https://opositaplus.app/oposiciones/sms-murcia-pinche.html): grupo AP, 16 temas, 1.199 preguntas.
+- [Pinche](https://opositaplus.app/oposiciones/sms-murcia-pinche.html): grupo AP, 16 temas, 1.236 preguntas.
 - [Pinche · Discapacidad Intelectual](https://opositaplus.app/oposiciones/sms-murcia-pinche-di.html): grupo AP, 6 temas, 600 preguntas.
-- [Planchado](https://opositaplus.app/oposiciones/sms-murcia-planchado.html): grupo AP, 16 temas, 1.199 preguntas.
+- [Planchado](https://opositaplus.app/oposiciones/sms-murcia-planchado.html): grupo AP, 16 temas, 1.236 preguntas.
 - [Administrativo/a](https://opositaplus.app/oposiciones/sms-murcia-administrativo.html): grupo C1, 33 temas, 1.980 preguntas.
-- [Anatomía Patológica y Citodiagnóstico](https://opositaplus.app/oposiciones/sms-murcia-anatomia-patologica.html): grupo C1, 46 temas, 4.321 preguntas.
+- [Anatomía Patológica y Citodiagnóstico](https://opositaplus.app/oposiciones/sms-murcia-anatomia-patologica.html): grupo C1, 46 temas, 4.601 preguntas.
 - [Delineación](https://opositaplus.app/oposiciones/sms-murcia-delineacion.html): grupo C1, 39 temas, 2.660 preguntas.
-- [Documentación Sanitaria](https://opositaplus.app/oposiciones/sms-murcia-documentacion-sanitaria.html): grupo C1, 55 temas, 3.309 preguntas.
-- [Higiene Dental](https://opositaplus.app/oposiciones/sms-murcia-higiene-dental.html): grupo C1, 41 temas, 3.821 preguntas.
+- [Documentación Sanitaria](https://opositaplus.app/oposiciones/sms-murcia-documentacion-sanitaria.html): grupo C1, 55 temas, 3.589 preguntas.
+- [Higiene Dental](https://opositaplus.app/oposiciones/sms-murcia-higiene-dental.html): grupo C1, 41 temas, 4.101 preguntas.
 - [Informática](https://opositaplus.app/oposiciones/sms-murcia-informatica.html): grupo C1, 39 temas, 2.665 preguntas.
-- [Laboratorio de Diagnóstico Clínico](https://opositaplus.app/oposiciones/sms-murcia-laboratorio.html): grupo C1, 50 temas, 3.001 preguntas.
-- [Radiodiagnóstico](https://opositaplus.app/oposiciones/sms-murcia-radiodiagnostico.html): grupo C1, 37 temas, 2.221 preguntas.
-- [Radioterapia](https://opositaplus.app/oposiciones/sms-murcia-radioterapia.html): grupo C1, 45 temas, 2.701 preguntas.
+- [Laboratorio de Diagnóstico Clínico](https://opositaplus.app/oposiciones/sms-murcia-laboratorio.html): grupo C1, 50 temas, 3.281 preguntas.
+- [Radiodiagnóstico](https://opositaplus.app/oposiciones/sms-murcia-radiodiagnostico.html): grupo C1, 37 temas, 2.501 preguntas.
+- [Radioterapia](https://opositaplus.app/oposiciones/sms-murcia-radioterapia.html): grupo C1, 45 temas, 2.981 preguntas.
 - [Restauración](https://opositaplus.app/oposiciones/sms-murcia-restauracion.html): grupo C1, 36 temas, 2.480 preguntas.
 - [Albañilería](https://opositaplus.app/oposiciones/sms-murcia-albanileria.html): grupo C2, 21 temas, 2.100 preguntas.
 - [Auxiliar Administrativo/a](https://opositaplus.app/oposiciones/sms-murcia-auxiliar-administrativo.html): grupo C2, 24 temas, 2.400 preguntas.
@@ -107,11 +107,11 @@
 - [Cocina](https://opositaplus.app/oposiciones/sms-murcia-cocina.html): grupo C2, 33 temas, 3.300 preguntas.
 - [Conducción](https://opositaplus.app/oposiciones/sms-murcia-conduccion.html): grupo C2, 21 temas, 1.900 preguntas.
 - [Costura](https://opositaplus.app/oposiciones/sms-murcia-costura.html): grupo C2, 18 temas, 1.800 preguntas.
-- [Cuidados Auxiliares de Enfermería](https://opositaplus.app/oposiciones/sms-murcia-cuidados-auxiliares-enfermeria.html): grupo C2, 44 temas, 2.721 preguntas.
+- [Cuidados Auxiliares de Enfermería](https://opositaplus.app/oposiciones/sms-murcia-cuidados-auxiliares-enfermeria.html): grupo C2, 44 temas, 3.001 preguntas.
 - [Electricidad](https://opositaplus.app/oposiciones/sms-murcia-electricidad.html): grupo C2, 33 temas, 3.300 preguntas.
-- [Emergencias Sanitarias · Conductor](https://opositaplus.app/oposiciones/sms-murcia-emergencias-conductor.html): grupo C2, 32 temas, 2.941 preguntas.
-- [Emergencias Sanitarias · Teleoperador](https://opositaplus.app/oposiciones/sms-murcia-emergencias-teleoperador.html): grupo C2, 28 temas, 1.801 preguntas.
-- [Farmacia](https://opositaplus.app/oposiciones/sms-murcia-farmacia.html): grupo C2, 41 temas, 2.461 preguntas.
+- [Emergencias Sanitarias · Conductor](https://opositaplus.app/oposiciones/sms-murcia-emergencias-conductor.html): grupo C2, 32 temas, 3.221 preguntas.
+- [Emergencias Sanitarias · Teleoperador](https://opositaplus.app/oposiciones/sms-murcia-emergencias-teleoperador.html): grupo C2, 28 temas, 2.081 preguntas.
+- [Farmacia](https://opositaplus.app/oposiciones/sms-murcia-farmacia.html): grupo C2, 41 temas, 2.741 preguntas.
 - [Fontanería](https://opositaplus.app/oposiciones/sms-murcia-fontaneria.html): grupo C2, 29 temas, 2.900 preguntas.
 - [Gobernante/a](https://opositaplus.app/oposiciones/sms-murcia-gobernante.html): grupo C2, 33 temas, 3.300 preguntas.
 - [Mantenimiento](https://opositaplus.app/oposiciones/sms-murcia-mantenimiento.html): grupo C2, 28 temas, 2.800 preguntas.
