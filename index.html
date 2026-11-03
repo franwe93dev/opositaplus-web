@@ -1266,6 +1266,31 @@ html.js .reveal.is-in {
   }
   html { scroll-behavior: auto; }
 }
+
+/* ---------- Leyes en esquemas ---------- */
+.promo-esquemas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 28px;
+  padding: 28px;
+  border-radius: var(--r-card);
+  background: var(--accent-surface);
+  border: 1px solid var(--border);
+}
+.promo-esquemas img {
+  flex: 0 1 240px;
+  max-width: 240px;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+  box-shadow: var(--shadow);
+}
+.promo-esquemas > div { flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+.promo-esquemas h2 { margin: 0; }
+.promo-esquemas p { margin: 0; color: var(--text-secondary); font-size: 17px; }
+@media (max-width: 560px) { .promo-esquemas { padding: 20px; } .promo-esquemas img { max-width: 100%; flex-basis: 100%; } }
 </style>
 <script type="application/ld+json">
 {
@@ -1568,6 +1593,7 @@ html.js .reveal.is-in {
       <a class="nav-link" href="#contenido">Contenido</a>
       <a class="nav-link" href="#diferencia">Por qué nosotros</a>
       <a class="nav-link" href="oposiciones.html">Oposiciones</a>
+      <a class="nav-link" href="esquemas.html">Esquemas</a>
       <a class="nav-link" href="#precios">Precios</a>
       <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar entre modo claro y oscuro">
         <svg class="ic ic-moon" aria-hidden="true"><use href="#i-moon"/></svg>
@@ -1951,6 +1977,22 @@ html.js .reveal.is-in {
   </div>
 </section>
 
+<!-- ============ Leyes en esquemas ============ -->
+<section class="section" id="esquemas" style="padding-top:0">
+  <div class="wrap">
+    <div class="promo-esquemas reveal">
+      <img src="img/esquemas/0-Portada-Pack-completo.jpg" alt="Portadas de los cuadernos en esquemas de OpositaPlus" width="1200" height="1495" loading="lazy">
+      <div>
+        <span class="chip">Nuevo</span>
+        <h2>Leyes en esquemas</h2>
+        <p>Constitución, Ley 39/2015, Ley 40/2015, TREBEP y más, en cuadernos PDF para repasar la parte
+        general. Con ejemplos y casos resueltos y trampas de test. Desde 7,99 €.</p>
+        <a class="btn btn-primary" href="esquemas.html">Ver los esquemas →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ Precios ============ -->
 <section class="section" id="precios">
   <div class="wrap">
@@ -2212,6 +2254,7 @@ html.js .reveal.is-in {
     <div>© 2026 OpositaPlus · Oposiciones de la Región de Murcia y del Servicio Murciano de Salud</div>
     <div class="foot-links">
       <a href="oposiciones.html">Oposiciones</a>
+      <a href="esquemas.html">Leyes en esquemas</a>
       <a href="#precios">Precios</a>
       <a href="#contenido">Contenido</a>
       <a href="soporte.html">Soporte</a>

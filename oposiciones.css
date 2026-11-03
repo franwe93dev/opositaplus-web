@@ -182,3 +182,42 @@
 .quiz-sol p { margin: 8px 0 0; }
 .quiz-sol b { color: var(--text-primary); }
 .quiz-ref { font-size: 13px; color: var(--text-tertiary); }
+
+/* ---------- Leyes en esquemas (bloque de cada oposición) ---------- */
+
+.es-op {
+  margin-top: 38px;
+  padding: 22px 24px;
+  border-radius: var(--r-card);
+  background: var(--accent-surface);
+  border: 1px solid var(--border);
+}
+.es-op .op-pill { background: var(--surface); border: 1px solid var(--border); }
+.es-op h2 { margin: 10px 0 6px; }
+.es-op > p { color: var(--text-secondary); margin: 0; }
+.es-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+  margin: 18px 0 14px;
+}
+.es-mini {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 10px;
+  border-radius: var(--r-m);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: transform .2s var(--ease-bouncy), border-color .2s var(--ease-standard);
+}
+.es-mini:hover { transform: translateY(-2px); border-color: var(--accent); }
+.es-mini img { flex: 0 0 56px; width: 56px; height: auto; border-radius: 6px; border: 1px solid var(--separator); }
+.es-mini span { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.es-mini b { font-size: 15px; font-weight: 800; }
+.es-mini small { font-size: 13px; color: var(--text-secondary); line-height: 1.35; }
+.es-mini em { font-style: normal; font-size: 14px; font-weight: 800; color: var(--accent); }
+.es-op .es-op-pack { font-size: 15px; }
+.es-op-pack a { color: var(--accent); font-weight: 700; }
