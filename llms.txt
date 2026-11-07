@@ -5,7 +5,7 @@
 ## Qué es
 
 - **Ámbito:** solo oposiciones de la Región de Murcia. Dos administraciones convocantes: la Comunidad Autónoma (CARM) y el Servicio Murciano de Salud (SMS).
-- **Catálogo:** 91 oposiciones (46 de la CARM y 45 del SMS), con 2.533 temas distintos y 190.585 preguntas de test con corrección razonada.
+- **Catálogo:** 91 oposiciones (46 de la CARM y 45 del SMS), con 2.533 temas distintos y 191.820 preguntas de test con corrección razonada.
 - **Estructura de un tema:** como mínimo tres tests de veinte preguntas, más introducción, puntos clave y los artículos que hay que memorizar. Cada respuesta explica por qué es correcta y cita la norma en la que se apoya.
 - **Exámenes oficiales:** 72 exámenes del Servicio Murciano de Salud transcritos de su cuadernillo, con la letra correcta de la plantilla oficial: 6.160 preguntas reales.
 - **Origen del temario:** cada oposición usa el programa publicado en su propia convocatoria (BORM o portal del SMS). La página de cada oposición cita la Orden o Resolución concreta y enlaza su PDF oficial.
@@ -96,7 +96,7 @@
 - [Delineación](https://opositaplus.app/oposiciones/sms-murcia-delineacion.html): grupo C1, 39 temas, 2.660 preguntas.
 - [Documentación Sanitaria](https://opositaplus.app/oposiciones/sms-murcia-documentacion-sanitaria.html): grupo C1, 55 temas, 3.589 preguntas.
 - [Higiene Dental](https://opositaplus.app/oposiciones/sms-murcia-higiene-dental.html): grupo C1, 41 temas, 4.101 preguntas.
-- [Informática](https://opositaplus.app/oposiciones/sms-murcia-informatica.html): grupo C1, 39 temas, 2.665 preguntas.
+- [Informática](https://opositaplus.app/oposiciones/sms-murcia-informatica.html): grupo C1, 39 temas, 3.900 preguntas.
 - [Laboratorio de Diagnóstico Clínico](https://opositaplus.app/oposiciones/sms-murcia-laboratorio.html): grupo C1, 50 temas, 3.281 preguntas.
 - [Radiodiagnóstico](https://opositaplus.app/oposiciones/sms-murcia-radiodiagnostico.html): grupo C1, 37 temas, 3.701 preguntas.
 - [Radioterapia](https://opositaplus.app/oposiciones/sms-murcia-radioterapia.html): grupo C1, 45 temas, 2.981 preguntas.
