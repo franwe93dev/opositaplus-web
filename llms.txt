@@ -5,7 +5,7 @@
 ## Qué es
 
 - **Ámbito:** solo oposiciones de la Región de Murcia. Dos administraciones convocantes: la Comunidad Autónoma (CARM) y el Servicio Murciano de Salud (SMS).
-- **Catálogo:** 91 oposiciones (46 de la CARM y 45 del SMS), con 2.533 temas distintos y 193.180 preguntas de test con corrección razonada.
+- **Catálogo:** 91 oposiciones (46 de la CARM y 45 del SMS), con 2.533 temas distintos y 194.700 preguntas de test con corrección razonada.
 - **Estructura de un tema:** como mínimo tres tests de veinte preguntas, más introducción, puntos clave y los artículos que hay que memorizar. Cada respuesta explica por qué es correcta y cita la norma en la que se apoya.
 - **Exámenes oficiales:** 72 exámenes del Servicio Murciano de Salud transcritos de su cuadernillo, con la letra correcta de la plantilla oficial: 6.160 preguntas reales.
 - **Origen del temario:** cada oposición usa el programa publicado en su propia convocatoria (BORM o portal del SMS). La página de cada oposición cita la Orden o Resolución concreta y enlaza su PDF oficial.
@@ -99,7 +99,7 @@
 - [Informática](https://opositaplus.app/oposiciones/sms-murcia-informatica.html): grupo C1, 39 temas, 3.900 preguntas.
 - [Laboratorio de Diagnóstico Clínico](https://opositaplus.app/oposiciones/sms-murcia-laboratorio.html): grupo C1, 50 temas, 3.281 preguntas.
 - [Radiodiagnóstico](https://opositaplus.app/oposiciones/sms-murcia-radiodiagnostico.html): grupo C1, 37 temas, 3.701 preguntas.
-- [Radioterapia](https://opositaplus.app/oposiciones/sms-murcia-radioterapia.html): grupo C1, 45 temas, 2.981 preguntas.
+- [Radioterapia](https://opositaplus.app/oposiciones/sms-murcia-radioterapia.html): grupo C1, 45 temas, 4.501 preguntas.
 - [Restauración](https://opositaplus.app/oposiciones/sms-murcia-restauracion.html): grupo C1, 36 temas, 2.480 preguntas.
 - [Albañilería](https://opositaplus.app/oposiciones/sms-murcia-albanileria.html): grupo C2, 21 temas, 2.100 preguntas.
 - [Auxiliar Administrativo/a](https://opositaplus.app/oposiciones/sms-murcia-auxiliar-administrativo.html): grupo C2, 24 temas, 2.400 preguntas.
