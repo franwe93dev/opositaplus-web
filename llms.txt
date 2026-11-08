@@ -5,7 +5,7 @@
 ## Qué es
 
 - **Ámbito:** solo oposiciones de la Región de Murcia. Dos administraciones convocantes: la Comunidad Autónoma (CARM) y el Servicio Murciano de Salud (SMS).
-- **Catálogo:** 91 oposiciones (46 de la CARM y 45 del SMS), con 2.533 temas distintos y 194.700 preguntas de test con corrección razonada.
+- **Catálogo:** 91 oposiciones (46 de la CARM y 45 del SMS), con 2.533 temas distintos y 196.020 preguntas de test con corrección razonada.
 - **Estructura de un tema:** como mínimo tres tests de veinte preguntas, más introducción, puntos clave y los artículos que hay que memorizar. Cada respuesta explica por qué es correcta y cita la norma en la que se apoya.
 - **Exámenes oficiales:** 72 exámenes del Servicio Murciano de Salud transcritos de su cuadernillo, con la letra correcta de la plantilla oficial: 6.160 preguntas reales.
 - **Origen del temario:** cada oposición usa el programa publicado en su propia convocatoria (BORM o portal del SMS). La página de cada oposición cita la Orden o Resolución concreta y enlaza su PDF oficial.
@@ -91,7 +91,7 @@
 - [Pinche](https://opositaplus.app/oposiciones/sms-murcia-pinche.html): grupo AP, 16 temas, 1.596 preguntas.
 - [Pinche · Discapacidad Intelectual](https://opositaplus.app/oposiciones/sms-murcia-pinche-di.html): grupo AP, 6 temas, 600 preguntas.
 - [Planchado](https://opositaplus.app/oposiciones/sms-murcia-planchado.html): grupo AP, 16 temas, 1.596 preguntas.
-- [Administrativo/a](https://opositaplus.app/oposiciones/sms-murcia-administrativo.html): grupo C1, 33 temas, 1.980 preguntas.
+- [Administrativo/a](https://opositaplus.app/oposiciones/sms-murcia-administrativo.html): grupo C1, 33 temas, 3.300 preguntas.
 - [Anatomía Patológica y Citodiagnóstico](https://opositaplus.app/oposiciones/sms-murcia-anatomia-patologica.html): grupo C1, 46 temas, 4.601 preguntas.
 - [Delineación](https://opositaplus.app/oposiciones/sms-murcia-delineacion.html): grupo C1, 39 temas, 2.660 preguntas.
 - [Documentación Sanitaria](https://opositaplus.app/oposiciones/sms-murcia-documentacion-sanitaria.html): grupo C1, 55 temas, 3.589 preguntas.
