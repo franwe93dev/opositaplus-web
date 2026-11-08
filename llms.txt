@@ -5,7 +5,7 @@
 ## Qué es
 
 - **Ámbito:** solo oposiciones de la Región de Murcia. Dos administraciones convocantes: la Comunidad Autónoma (CARM) y el Servicio Murciano de Salud (SMS).
-- **Catálogo:** 91 oposiciones (46 de la CARM y 45 del SMS), con 2.533 temas distintos y 191.820 preguntas de test con corrección razonada.
+- **Catálogo:** 91 oposiciones (46 de la CARM y 45 del SMS), con 2.533 temas distintos y 193.180 preguntas de test con corrección razonada.
 - **Estructura de un tema:** como mínimo tres tests de veinte preguntas, más introducción, puntos clave y los artículos que hay que memorizar. Cada respuesta explica por qué es correcta y cita la norma en la que se apoya.
 - **Exámenes oficiales:** 72 exámenes del Servicio Murciano de Salud transcritos de su cuadernillo, con la letra correcta de la plantilla oficial: 6.160 preguntas reales.
 - **Origen del temario:** cada oposición usa el programa publicado en su propia convocatoria (BORM o portal del SMS). La página de cada oposición cita la Orden o Resolución concreta y enlaza su PDF oficial.
@@ -112,7 +112,7 @@
 - [Electricidad](https://opositaplus.app/oposiciones/sms-murcia-electricidad.html): grupo C2, 33 temas, 3.300 preguntas.
 - [Emergencias Sanitarias · Conductor](https://opositaplus.app/oposiciones/sms-murcia-emergencias-conductor.html): grupo C2, 32 temas, 3.221 preguntas.
 - [Emergencias Sanitarias · Teleoperador](https://opositaplus.app/oposiciones/sms-murcia-emergencias-teleoperador.html): grupo C2, 28 temas, 2.801 preguntas.
-- [Farmacia](https://opositaplus.app/oposiciones/sms-murcia-farmacia.html): grupo C2, 41 temas, 2.741 preguntas.
+- [Farmacia](https://opositaplus.app/oposiciones/sms-murcia-farmacia.html): grupo C2, 41 temas, 4.101 preguntas.
 - [Fontanería](https://opositaplus.app/oposiciones/sms-murcia-fontaneria.html): grupo C2, 29 temas, 2.900 preguntas.
 - [Gobernante/a](https://opositaplus.app/oposiciones/sms-murcia-gobernante.html): grupo C2, 33 temas, 3.300 preguntas.
 - [Mantenimiento](https://opositaplus.app/oposiciones/sms-murcia-mantenimiento.html): grupo C2, 28 temas, 2.800 preguntas.
