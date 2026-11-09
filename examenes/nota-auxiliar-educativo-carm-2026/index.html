@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Calcula tu nota de los supuestos prácticos de Auxiliar Educativo de la CARM 2026 | OpositaPlus</title>
-<meta name="description" content="Marca tus respuestas de los supuestos prácticos de Auxiliar Educativo de la CARM (7 de noviembre de 2026) y calcula tu nota con la plantilla no oficial de OpositaPlus. Cada supuesto vale 5 puntos y cada tres fallos restan un acierto.">
+<meta name="description" content="Marca tus respuestas de los supuestos prácticos de Auxiliar Educativo de la CARM (7 de noviembre de 2026) y calcula tu nota con la plantilla oficial del tribunal. Cada supuesto vale 5 puntos y cada tres fallos restan un acierto.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#2E6BE6">
 <link rel="canonical" href="https://opositaplus.app/examenes/nota-auxiliar-educativo-carm-2026/">
@@ -15,7 +15,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://opositaplus.app/examenes/nota-auxiliar-educativo-carm-2026/">
 <meta property="og:title" content="Calcula tu nota de los supuestos prácticos de Auxiliar Educativo">
-<meta property="og:description" content="Marca tus respuestas y mira tu nota al momento, supuesto a supuesto, con la plantilla no oficial de OpositaPlus.">
+<meta property="og:description" content="Marca tus respuestas y mira tu nota al momento, supuesto a supuesto, con la plantilla oficial del tribunal.">
 <meta property="og:image" content="https://opositaplus.app/og-opositaplus.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -282,6 +282,9 @@ button { font: inherit; color: inherit; }
 .item.ok { --k: var(--success); }
 .item.ko { --k: var(--error); }
 .item.bl { --k: var(--text-tertiary); }
+.item.void { --k: var(--border); }
+.item-flag.is-void { background: var(--surface-elevated); color: var(--text-secondary); }
+.row.is-void .row-num { text-decoration: line-through; color: var(--text-tertiary); }
 .item-head { display: flex; gap: var(--sp-m); align-items: flex-start; }
 .item-num { flex: none; min-width: 34px; height: 34px; padding: 0 6px; border-radius: 10px; display: grid; place-items: center; font-weight: 800; font-size: 15px; background: var(--surface-elevated); }
 .item-q { font-weight: 700; font-size: 16px; line-height: 1.4; }
@@ -289,6 +292,8 @@ button { font: inherit; color: inherit; }
 .ans { display: flex; gap: 10px; align-items: flex-start; font-size: 15px; padding: 8px 12px; border-radius: var(--r-s); }
 .ans b { flex: none; width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; font-size: 13px; color: #FFF; }
 .ans.yours { background: var(--error-surface); }
+.ans.neutral { background: var(--surface-elevated); }
+.ans.neutral b { background: var(--text-tertiary); }
 .ans.yours b { background: var(--error); }
 .ans.right { background: var(--success-surface); }
 .ans.right b { background: var(--success); }
@@ -366,15 +371,16 @@ footer a { color: var(--text-secondary); }
 <main>
   <section class="intro">
     <div class="wrap intro-inner">
-      <span class="chip"><svg class="ic" aria-hidden="true"><use href="#i-exclaim"/></svg> Plantilla no oficial de OpositaPlus · Examen del 7 de noviembre de 2026</span>
+      <span class="chip"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg> Plantilla oficial del tribunal · Examen del 7 de noviembre de 2026</span>
       <h1>Calcula tu nota de los supuestos prácticos de <span class="grad">Auxiliar Educativo</span></h1>
-      <p class="intro-sub">Marca lo que contestaste en los dos supuestos y te decimos tu nota al momento, supuesto a supuesto y con la penalización de la oposición ya aplicada. Cuando el tribunal publique la plantilla oficial, manda la oficial.</p>
+      <p class="intro-sub">Marca lo que contestaste en los dos supuestos y te decimos tu nota al momento, supuesto a supuesto y con la penalización de la oposición ya aplicada. Corregimos con la plantilla oficial que ha publicado el tribunal, con la pregunta 11 anulada.</p>
       <div class="rule" aria-label="Cómo se puntúa">
         <span><b>2</b> supuestos de <b>15</b></span>
         <span>Cada supuesto <b>0 a 5</b>, mínimo <b>2,5</b></span>
         <span>Acierto <b>+1</b></span>
         <span>Fallo <b>−⅓</b></span>
         <span>En blanco <b>0</b></span>
+        <span>Pregunta 11 <b>anulada</b></span>
       </div>
     </div>
   </section>
@@ -450,7 +456,7 @@ footer a { color: var(--text-secondary); }
       <div class="review">
         <div class="step-head">
           <span class="step-num" aria-hidden="true">2</span>
-          <div><h2>Repasa pregunta a pregunta</h2><p>Con el enunciado y la respuesta que proponemos para cada una.</p></div>
+          <div><h2>Repasa pregunta a pregunta</h2><p>Con el enunciado y la respuesta correcta de la plantilla oficial.</p></div>
         </div>
         <div class="tabs" role="tablist" aria-label="Filtrar preguntas">
           <button class="tab" role="tab" type="button" data-filter="ko" aria-selected="true">Fallos <span id="tabKo"></span></button>
@@ -474,12 +480,12 @@ footer a { color: var(--text-secondary); }
 
 <footer>
   <div class="wrap">
-    Corrección con la plantilla no oficial de OpositaPlus: cuando el tribunal publique la oficial, manda la oficial. Puntuación según el anexo V de la Orden de 14 de febrero de 2025 (BORM nº 42): cada supuesto se valora de 0 a 5 y hace falta un 2,5 en cada uno; cada fallo resta un tercio de acierto. Herramienta de OpositaPlus, sin relación con el tribunal.<br>
+    Corrección con la plantilla oficial de respuestas publicada por el tribunal el 7 de noviembre de 2026, con la pregunta 11 anulada. Como el ejercicio no tenía preguntas de reserva, el primer supuesto se calcula sobre sus 14 preguntas válidas, para que siga valiendo de 0 a 5. Puntuación según el anexo V de la Orden de 14 de febrero de 2025 (BORM nº 42): cada supuesto se valora de 0 a 5 y hace falta un 2,5 en cada uno; cada fallo resta un tercio de acierto. Herramienta de OpositaPlus, sin relación con el tribunal.<br>
     <a href="../../">opositaplus.app</a> · <a href="../../privacidad.html">Privacidad</a> · <a href="../../aviso-legal.html">Aviso legal</a>
   </div>
 </footer>
 
-<script id="examData" type="application/json">{"q": [{"s": "Sara tiene parálisis cerebral espástica, que se caracteriza principalmente por:", "o": ["Afectar de forma directa al equilibrio y la coordinación general. Dificulta caminar en línea recta y hacer tareas que requieren precisión con las manos.", "Combinar el aumento de la tensión con movimientos lentos y organizados.", "Provocar movimientos involuntarios, lentos o bruscos, cambiantes de intensidad durante el día.", "Causar rigidez muscular y aumento de la tensión, lo que dificulta el movimiento de las extremidades."], "c": 3}, {"s": "¿Qué estructura del cerebro se encuentra principalmente afectada en la parálisis cerebral atáxica?:", "o": ["Los ganglios basales.", "La médula espinal.", "El cerebelo.", "El lóbulo occipital."], "c": 2}, {"s": "¿Qué denominación se utilizaba antiguamente para referirse a la parálisis cerebral?:", "o": ["Enfermedad de Little.", "Mal Francés.", "Enfermedad de Lyme.", "Mal de San Lázaro."], "c": 0}, {"s": "¿Qué autores desarrollaron el modelo de calidad de vida que orienta la actuación del auxiliar como profesional de apoyo?:", "o": ["Freud y Skinner.", "Pavlov.", "Schalock y Verdugo.", "Piaget y Vigosky."], "c": 2}, {"s": "¿Cuál es el procedimiento más adecuado para ayudar a vestir y desvestir a una persona con movilidad reducida?:", "o": ["Vestir en primer lugar la extremidad o zona corporal con menor movilidad y desvestirla en último lugar.", "Vestir en primer lugar la extremidad o zona corporal con mayor movilidad y desvestirla en primer lugar.", "Vestir en primer lugar la extremidad o zona corporal con menor movilidad y desvestir en primer lugar.", "Ninguna es correcta."], "c": 0}, {"s": "Según el método Dotte, ¿cuál de las siguientes clasificaciones se corresponde con las técnicas de agarre o transporte empleadas en la movilización y el traslado de personas usuarias?:", "o": ["Caballero sirviente, banqueta y finta lateral.", "No ponderal, subponderal y ponderal.", "Ayudado, controlado y pasivo.", "Directo, indirecto y combinado."], "c": 1}, {"s": "Según el artículo 12.b de la Orden de 19 de septiembre de 2003 de la Consejería de Hacienda, de Regulación de Jornada, Horario Especial y Funciones del Personal de Atención Educativa Complementaria y otro personal no docente que presta servicios en centros docentes de la Consejería de Educación y Cultura, el Auxiliar Técnico Educativo deberá:", "o": ["Colaborar con los profesores y el resto de los profesionales en los cambios posturales y traslados de aulas o servicios de los escolares, en la vigilancia de éstos en los recreos y en las clases, en ausencia inexcusable del profesor.", "Participar con los profesores y el resto de los profesionales en los cambios posturales y traslados de aulas o servicios de los escolares, en la vigilancia de éstos en los recreos y en las clases, en ausencia inexcusable del profesor.", "Cooperar con los profesores y el resto de los profesionales en los cambios posturales y traslados de aulas o servicios de los escolares, en la vigilancia de éstos en los recreos y en las clases, en ausencia inexcusable del profesor.", "Intervenir con los profesores y el resto de los profesionales en los cambios posturales y traslados de aulas o servicios de los escolares, en la vigilancia de éstos en los recreos y en las clases, en ausencia inexcusable del profesor."], "c": 0}, {"s": "A la hora de realizar transferencias a Sara (de la silla de ruedas al inodoro o a la colchoneta), ¿qué principio de ergonomía debe aplicar prioritariamente el ATE?:", "o": ["Flexionar la espalda manteniendo las rodillas completamente rectas y los pies juntos.", "Realizar el esfuerzo cargando todo el peso sobre los brazos de forma brusca y veloz.", "Mantener los pies separados para aumentar la base de sustentación, flexionar las rodillas y mantener la espalda recta, usando el peso del propio cuerpo.", "Coger a Sara en solitario, independientemente de su peso o volumen, para no molestar a otros compañeros."], "c": 2}, {"s": "Durante los cambios de pañal y la rutina de aseo de Sara, ¿cuál debe ser el enfoque prioritario del auxiliar técnico educativo?:", "o": ["Realizar la tarea con la máxima rapidez posible de forma puramente mecánica.", "Dejar sola a Sara en el cambiador si ésta muestra resistencia física para evitar conflictos.", "Decidir unilateralmente cuándo se le debe quitar el pañal definitivamente a Sara.", "Aprovechar el momento para fomentar al máximo la autonomía de Sara, permitiéndole participar en lo que sea capaz."], "c": 3}, {"s": "Durante una rutina de higiene en el aseo, el auxiliar técnico educativo detecta una rojez anómala o hematoma en la espalda de Sara, ¿cuál es el procedimiento correcto?:", "o": ["Ocultarlo para no alarmar a nadie y esperar a ver si desaparece en los días siguientes.", "Aplicar una pomada antiinflamatoria de forma inmediata sin consultar con el servicio médico del centro.", "Comunicarlo de forma inmediata, tanto al maestro tutor, como al servicio de enfermería para su valoración y registro.", "Llamar directamente a los servicios policiales antes de informar a cualquier miembro del equipo educativo del centro."], "c": 2}, {"s": "Según Miguel Puyuelo, ¿alrededor de qué porcentaje de los casos de parálisis cerebral se presentan con problemas en el desarrollo del lenguaje?:", "o": ["Entre el 91-100%.", "Entre el 38-45%.", "Entre el 60-90 %.", "Entre el 20-35%."], "c": 2}, {"s": "¿Cuál es la secuencia evolutiva recomendada para la introducción de representaciones visuales en Sistemas Aumentativos y Alternativos de Comunicación?:", "o": ["Pictogramas -> Dibujos -> Fotografías -> Objetos reales.", "Fotografías -> Pictogramas -> Objetos reales -> Dibujos.", "Dibujos -> Objetos reales -> Fotografías -> Pictogramas.", "Objetos reales -> Fotografías -> Dibujos -> Pictogramas."], "c": 3}, {"s": "¿Qué profesional es el encargado de diseñar las pautas específicas de estimulación orofacial?:", "o": ["Tutor.", "Fisioterapeuta.", "Auxiliar educativo.", "Audición y Lenguaje."], "c": 3}, {"s": "En el comedor escolar, ¿qué tipo de cubiertos serían más adecuados para Sara?:", "o": ["Cubiertos ligeros con mangos finos y lisos.", "Cubiertos pequeños, sin engrosador y antideslizantes.", "Cubiertos pesados con mangos gruesos y antideslizantes.", "Cubiertos de plástico muy ligeros."], "c": 2}, {"s": "La producción excesiva de saliva que puede requerir el uso de un babero de protección, se denomina:", "o": ["Sialorrea.", "Ptialismo.", "A y B son correctas.", "A y B son falsas."], "c": 2}, {"s": "Según el DSM-5-TR, ¿qué caracteriza principalmente al TEA?:", "o": ["Dificultades persistentes en la comunicación e interacción social y patrones restrictivos y repetitivos de comportamiento.", "Dificultades atenuadas en la comunicación e independencia social y patrones ilimitados y repetitivos de comportamiento.", "Dificultades atenuadas en la comunicación e interacción social y patrones restrictivos y repetitivos de comportamiento.", "Dificultades persistentes en la comunicación e interacción social y patrones ilimitados y no repetitivos de comportamiento."], "c": 0}, {"s": "Dylan, necesita ser valorado en situación de dependencia. Según la legislación actual, tras la modificación por la Ley 4/2026, de 1 de octubre, ¿qué instrumento de valoración corresponde aplicar?:", "o": ["La Escala de Valoración Específica (EVE), porque se aplica hasta los 6 años.", "El baremo general de dependencia, porque la EVE solo se aplica hasta los 3 años.", "Ningún instrumento hasta cumplir los 6 años.", "Exclusivamente un informe médico pediátrico."], "c": 0}, {"s": "En la Orden de 19 de septiembre de 2003 de la Consejería de Hacienda, de Regulación de Jornada, Horario Especial y Funciones del Personal de Atención Educativa Complementaria y otro personal no docente que presta servicios en centros docentes de la Consejería de Educación y Cultura, se prevé participar en las distintas reuniones de coordinación establecidas en los centros, ¿cuál es la respuesta adecuada?:", "o": ["Artículo 12.a.", "Artículo 12.c.", "Artículo 12.e.", "Artículo 12.g."], "c": 3}, {"s": "Dylan, que presenta necesidades muy significativas de apoyo en la comunicación e interacción social, junto con conductas restrictivas y repetitivas que interfieren de manera intensa en su funcionamiento cotidiano. ¿A qué nivel de apoyo corresponde dicha situación según el DSM-5-TR?:", "o": ["Nivel I.", "Nivel II.", "Nivel III.", "Nivel III+."], "c": 2}, {"s": "¿Qué manifestaciones pueden observarse en Dylan, cuando presenta alteraciones en el procesamiento propioceptivo?:", "o": ["Puede tener dificultades para percibir la posición y el movimiento de su cuerpo.", "Puede tener dificultades en la percepción visual.", "Tiene una excelente capacidad para percibir la posición y el movimiento de su cuerpo.", "Puede provocar descoordinación, regulación y movimientos anómalos."], "c": 0}, {"s": "Al llegar el transporte escolar al CEE, ¿cuál es el papel del ATE asignado a la recepción de Dylan?:", "o": ["Permanecer en el aula esperando a que el/la monitor/a suba a Dylan a la clase.", "Administrar un sedante ligero a Dylan, que se ha agitado durante el trayecto.", "Revisar las rutas de transporte, el estado de los vehículos y su documentación.", "Colaborar en el descenso seguro de Dylan del autobús y guiarlo hacia las dependencias del centro."], "c": 3}, {"s": "De las siguientes alteraciones y dificultades relacionadas con la alimentación, ¿cuáles pueden presentarse con frecuencia en personas con TEA?:", "o": ["Teria.", "Pica.", "Ortorexia.", "Todas son correctas."], "c": 1}, {"s": "Debido a una alteración en su rutina, Dylan tira la bandeja al suelo, comienza a gritar y autolesionarse, ¿cuál debe ser la primera reacción del Auxiliar Técnico Educativo?:", "o": ["Sujetar a Dylan fuertemente de los brazos y reprenderle con cariño y en voz baja para que deje de hacerlo.", "Se intenta negociar con Dylan, ofreciéndole su juguete favorito si se calma inmediatamente.", "Dejarle solo en el comedor hasta que se le pase la rabieta por completo.", "Garantizar la seguridad de Dylan y del entorno, retirar objetos peligrosos y mantener una actitud de calma esperando a que disminuya la crisis."], "c": 3}, {"s": "Ha finalizado el almuerzo y es el momento de recoger la mesa y lavarse las manos. Dylan tiende a levantarse e irse sin limpiar nada, ¿qué enfoque debe adoptar el Auxiliar Técnico Educativo?:", "o": ["Limpiar la mesa por Dylan, para ahorrar tiempo y evitar conflictos.", "Gritarle desde lejos que vuelva a recoger su bandeja y lavarse.", "Aplicar el encadenamiento hacia atrás o guía física, guiando a Dylan para que recoja la bandeja, tire los restos y limpie su espacio, reforzando cada paso.", "Aplicar el encadenamiento hacia delante de forma independiente, permitiendo que Dylan observe la tarea completa mientras recibe refuerzo únicamente al finalizar la limpieza del espacio."], "c": 2}, {"s": "Durante una sesión de estimulación multisensorial (Snoezelen), Dylan muestra signos de sobrecarga ante determinados estímulos luminosos, ¿qué actuación corresponde al Auxiliar Técnico Educativo en coordinación con el profesional responsable de la actividad?:", "o": ["Apartar suavemente a Dylan del estímulo directo, facilitar un espacio de menor intensidad lumínica y comunicarlo al profesional responsable de la sesión.", "Apagar todo el sistema informático de la sala sin previo aviso.", "Obligar a Dylan a mantener la mirada fija en las luces, para que se acostumbre por habituación.", "Administrar un fármaco ansiolítico que lleva en su mochila personal para estos casos."], "c": 0}, {"s": "Un Auxiliar Técnico Educativo observa que Dylan acude espontáneamente al Rincón de la Calma cuando comienza a mostrar signos de sobrecarga, ¿qué interpretación sería más adecuada?:", "o": ["Dylan está evitando deliberadamente participar en las actividades.", "El Auxiliar Técnico Educativo debería impedirle acudir para fomentar su tolerancia.", "Está desarrollando una dependencia inadecuada del espacio.", "Está utilizando de manera funcional un recurso aprendido para regularse."], "c": 3}, {"s": "¿Cuál sería la actuación menos adecuada respecto al uso de los auriculares?:", "o": ["Utilizarlos en situaciones previamente identificadas como especialmente ruidosas.", "Enseñar a Dylan progresivamente cuando puede necesitarlos.", "Mantenerlos disponibles para que pueda acceder a ellos cuando sean necesarios.", "Utilizarlos durante toda la jornada para evitar cualquier posible sobrecarga sensorial."], "c": 3}, {"s": "Si tenemos en cuenta el código de colores, que se aplica a los fondos o marcos de los pictogramas, basado en la función gramatical de las palabras para facilitar la construcción de frases según Fitzgerald, el color amarillo corresponde a:", "o": ["Personas y pronombres personales.", "Verbos o acciones.", "Adjetivos propios, objetos o lugares.", "Contenido social, expresiones de cortesía y emociones."], "c": 0}, {"s": "¿Qué es la palilalia en un niño con TEA?:", "o": ["La repetición involuntaria y automática de palabras o frases que acaba de decir otra persona.", "La dificultad para iniciar una frase y la repetición voluntaria para ganar tiempo.", "La repetición involuntaria de sus propias silabas, palabras o frases, a menudo cada vez con menos volumen y más rápido.", "La invención de palabras nuevas sin significado para los demás."], "c": 2}, {"s": "Según la actual ley de educación, el calendario escolar de Dylan debe comprender un mínimo de días lectivos en la enseñanza obligatoria, ¿cuántos?:", "o": ["170 días.", "165 días.", "180 días.", "175 días."], "c": 3}], "dudosas": [6, 11, 20, 22]}</script>
+<script id="examData" type="application/json">{"q": [{"s": "Sara tiene parálisis cerebral espástica, que se caracteriza principalmente por:", "o": ["Afectar de forma directa al equilibrio y la coordinación general. Dificulta caminar en línea recta y hacer tareas que requieren precisión con las manos.", "Combinar el aumento de la tensión con movimientos lentos y organizados.", "Provocar movimientos involuntarios, lentos o bruscos, cambiantes de intensidad durante el día.", "Causar rigidez muscular y aumento de la tensión, lo que dificulta el movimiento de las extremidades."], "c": 3}, {"s": "¿Qué estructura del cerebro se encuentra principalmente afectada en la parálisis cerebral atáxica?:", "o": ["Los ganglios basales.", "La médula espinal.", "El cerebelo.", "El lóbulo occipital."], "c": 2}, {"s": "¿Qué denominación se utilizaba antiguamente para referirse a la parálisis cerebral?:", "o": ["Enfermedad de Little.", "Mal Francés.", "Enfermedad de Lyme.", "Mal de San Lázaro."], "c": 0}, {"s": "¿Qué autores desarrollaron el modelo de calidad de vida que orienta la actuación del auxiliar como profesional de apoyo?:", "o": ["Freud y Skinner.", "Pavlov.", "Schalock y Verdugo.", "Piaget y Vigosky."], "c": 2}, {"s": "¿Cuál es el procedimiento más adecuado para ayudar a vestir y desvestir a una persona con movilidad reducida?:", "o": ["Vestir en primer lugar la extremidad o zona corporal con menor movilidad y desvestirla en último lugar.", "Vestir en primer lugar la extremidad o zona corporal con mayor movilidad y desvestirla en primer lugar.", "Vestir en primer lugar la extremidad o zona corporal con menor movilidad y desvestir en primer lugar.", "Ninguna es correcta."], "c": 0}, {"s": "Según el método Dotte, ¿cuál de las siguientes clasificaciones se corresponde con las técnicas de agarre o transporte empleadas en la movilización y el traslado de personas usuarias?:", "o": ["Caballero sirviente, banqueta y finta lateral.", "No ponderal, subponderal y ponderal.", "Ayudado, controlado y pasivo.", "Directo, indirecto y combinado."], "c": 0}, {"s": "Según el artículo 12.b de la Orden de 19 de septiembre de 2003 de la Consejería de Hacienda, de Regulación de Jornada, Horario Especial y Funciones del Personal de Atención Educativa Complementaria y otro personal no docente que presta servicios en centros docentes de la Consejería de Educación y Cultura, el Auxiliar Técnico Educativo deberá:", "o": ["Colaborar con los profesores y el resto de los profesionales en los cambios posturales y traslados de aulas o servicios de los escolares, en la vigilancia de éstos en los recreos y en las clases, en ausencia inexcusable del profesor.", "Participar con los profesores y el resto de los profesionales en los cambios posturales y traslados de aulas o servicios de los escolares, en la vigilancia de éstos en los recreos y en las clases, en ausencia inexcusable del profesor.", "Cooperar con los profesores y el resto de los profesionales en los cambios posturales y traslados de aulas o servicios de los escolares, en la vigilancia de éstos en los recreos y en las clases, en ausencia inexcusable del profesor.", "Intervenir con los profesores y el resto de los profesionales en los cambios posturales y traslados de aulas o servicios de los escolares, en la vigilancia de éstos en los recreos y en las clases, en ausencia inexcusable del profesor."], "c": 0}, {"s": "A la hora de realizar transferencias a Sara (de la silla de ruedas al inodoro o a la colchoneta), ¿qué principio de ergonomía debe aplicar prioritariamente el ATE?:", "o": ["Flexionar la espalda manteniendo las rodillas completamente rectas y los pies juntos.", "Realizar el esfuerzo cargando todo el peso sobre los brazos de forma brusca y veloz.", "Mantener los pies separados para aumentar la base de sustentación, flexionar las rodillas y mantener la espalda recta, usando el peso del propio cuerpo.", "Coger a Sara en solitario, independientemente de su peso o volumen, para no molestar a otros compañeros."], "c": 2}, {"s": "Durante los cambios de pañal y la rutina de aseo de Sara, ¿cuál debe ser el enfoque prioritario del auxiliar técnico educativo?:", "o": ["Realizar la tarea con la máxima rapidez posible de forma puramente mecánica.", "Dejar sola a Sara en el cambiador si ésta muestra resistencia física para evitar conflictos.", "Decidir unilateralmente cuándo se le debe quitar el pañal definitivamente a Sara.", "Aprovechar el momento para fomentar al máximo la autonomía de Sara, permitiéndole participar en lo que sea capaz."], "c": 3}, {"s": "Durante una rutina de higiene en el aseo, el auxiliar técnico educativo detecta una rojez anómala o hematoma en la espalda de Sara, ¿cuál es el procedimiento correcto?:", "o": ["Ocultarlo para no alarmar a nadie y esperar a ver si desaparece en los días siguientes.", "Aplicar una pomada antiinflamatoria de forma inmediata sin consultar con el servicio médico del centro.", "Comunicarlo de forma inmediata, tanto al maestro tutor, como al servicio de enfermería para su valoración y registro.", "Llamar directamente a los servicios policiales antes de informar a cualquier miembro del equipo educativo del centro."], "c": 2}, {"s": "Según Miguel Puyuelo, ¿alrededor de qué porcentaje de los casos de parálisis cerebral se presentan con problemas en el desarrollo del lenguaje?:", "o": ["Entre el 91-100%.", "Entre el 38-45%.", "Entre el 60-90 %.", "Entre el 20-35%."], "c": null}, {"s": "¿Cuál es la secuencia evolutiva recomendada para la introducción de representaciones visuales en Sistemas Aumentativos y Alternativos de Comunicación?:", "o": ["Pictogramas -> Dibujos -> Fotografías -> Objetos reales.", "Fotografías -> Pictogramas -> Objetos reales -> Dibujos.", "Dibujos -> Objetos reales -> Fotografías -> Pictogramas.", "Objetos reales -> Fotografías -> Dibujos -> Pictogramas."], "c": 3}, {"s": "¿Qué profesional es el encargado de diseñar las pautas específicas de estimulación orofacial?:", "o": ["Tutor.", "Fisioterapeuta.", "Auxiliar educativo.", "Audición y Lenguaje."], "c": 3}, {"s": "En el comedor escolar, ¿qué tipo de cubiertos serían más adecuados para Sara?:", "o": ["Cubiertos ligeros con mangos finos y lisos.", "Cubiertos pequeños, sin engrosador y antideslizantes.", "Cubiertos pesados con mangos gruesos y antideslizantes.", "Cubiertos de plástico muy ligeros."], "c": 2}, {"s": "La producción excesiva de saliva que puede requerir el uso de un babero de protección, se denomina:", "o": ["Sialorrea.", "Ptialismo.", "A y B son correctas.", "A y B son falsas."], "c": 2}, {"s": "Según el DSM-5-TR, ¿qué caracteriza principalmente al TEA?:", "o": ["Dificultades persistentes en la comunicación e interacción social y patrones restrictivos y repetitivos de comportamiento.", "Dificultades atenuadas en la comunicación e independencia social y patrones ilimitados y repetitivos de comportamiento.", "Dificultades atenuadas en la comunicación e interacción social y patrones restrictivos y repetitivos de comportamiento.", "Dificultades persistentes en la comunicación e interacción social y patrones ilimitados y no repetitivos de comportamiento."], "c": 0}, {"s": "Dylan, necesita ser valorado en situación de dependencia. Según la legislación actual, tras la modificación por la Ley 4/2026, de 1 de octubre, ¿qué instrumento de valoración corresponde aplicar?:", "o": ["La Escala de Valoración Específica (EVE), porque se aplica hasta los 6 años.", "El baremo general de dependencia, porque la EVE solo se aplica hasta los 3 años.", "Ningún instrumento hasta cumplir los 6 años.", "Exclusivamente un informe médico pediátrico."], "c": 0}, {"s": "En la Orden de 19 de septiembre de 2003 de la Consejería de Hacienda, de Regulación de Jornada, Horario Especial y Funciones del Personal de Atención Educativa Complementaria y otro personal no docente que presta servicios en centros docentes de la Consejería de Educación y Cultura, se prevé participar en las distintas reuniones de coordinación establecidas en los centros, ¿cuál es la respuesta adecuada?:", "o": ["Artículo 12.a.", "Artículo 12.c.", "Artículo 12.e.", "Artículo 12.g."], "c": 3}, {"s": "Dylan, que presenta necesidades muy significativas de apoyo en la comunicación e interacción social, junto con conductas restrictivas y repetitivas que interfieren de manera intensa en su funcionamiento cotidiano. ¿A qué nivel de apoyo corresponde dicha situación según el DSM-5-TR?:", "o": ["Nivel I.", "Nivel II.", "Nivel III.", "Nivel III+."], "c": 2}, {"s": "¿Qué manifestaciones pueden observarse en Dylan, cuando presenta alteraciones en el procesamiento propioceptivo?:", "o": ["Puede tener dificultades para percibir la posición y el movimiento de su cuerpo.", "Puede tener dificultades en la percepción visual.", "Tiene una excelente capacidad para percibir la posición y el movimiento de su cuerpo.", "Puede provocar descoordinación, regulación y movimientos anómalos."], "c": 0}, {"s": "Al llegar el transporte escolar al CEE, ¿cuál es el papel del ATE asignado a la recepción de Dylan?:", "o": ["Permanecer en el aula esperando a que el/la monitor/a suba a Dylan a la clase.", "Administrar un sedante ligero a Dylan, que se ha agitado durante el trayecto.", "Revisar las rutas de transporte, el estado de los vehículos y su documentación.", "Colaborar en el descenso seguro de Dylan del autobús y guiarlo hacia las dependencias del centro."], "c": 3}, {"s": "De las siguientes alteraciones y dificultades relacionadas con la alimentación, ¿cuáles pueden presentarse con frecuencia en personas con TEA?:", "o": ["Teria.", "Pica.", "Ortorexia.", "Todas son correctas."], "c": 3}, {"s": "Debido a una alteración en su rutina, Dylan tira la bandeja al suelo, comienza a gritar y autolesionarse, ¿cuál debe ser la primera reacción del Auxiliar Técnico Educativo?:", "o": ["Sujetar a Dylan fuertemente de los brazos y reprenderle con cariño y en voz baja para que deje de hacerlo.", "Se intenta negociar con Dylan, ofreciéndole su juguete favorito si se calma inmediatamente.", "Dejarle solo en el comedor hasta que se le pase la rabieta por completo.", "Garantizar la seguridad de Dylan y del entorno, retirar objetos peligrosos y mantener una actitud de calma esperando a que disminuya la crisis."], "c": 3}, {"s": "Ha finalizado el almuerzo y es el momento de recoger la mesa y lavarse las manos. Dylan tiende a levantarse e irse sin limpiar nada, ¿qué enfoque debe adoptar el Auxiliar Técnico Educativo?:", "o": ["Limpiar la mesa por Dylan, para ahorrar tiempo y evitar conflictos.", "Gritarle desde lejos que vuelva a recoger su bandeja y lavarse.", "Aplicar el encadenamiento hacia atrás o guía física, guiando a Dylan para que recoja la bandeja, tire los restos y limpie su espacio, reforzando cada paso.", "Aplicar el encadenamiento hacia delante de forma independiente, permitiendo que Dylan observe la tarea completa mientras recibe refuerzo únicamente al finalizar la limpieza del espacio."], "c": 2}, {"s": "Durante una sesión de estimulación multisensorial (Snoezelen), Dylan muestra signos de sobrecarga ante determinados estímulos luminosos, ¿qué actuación corresponde al Auxiliar Técnico Educativo en coordinación con el profesional responsable de la actividad?:", "o": ["Apartar suavemente a Dylan del estímulo directo, facilitar un espacio de menor intensidad lumínica y comunicarlo al profesional responsable de la sesión.", "Apagar todo el sistema informático de la sala sin previo aviso.", "Obligar a Dylan a mantener la mirada fija en las luces, para que se acostumbre por habituación.", "Administrar un fármaco ansiolítico que lleva en su mochila personal para estos casos."], "c": 0}, {"s": "Un Auxiliar Técnico Educativo observa que Dylan acude espontáneamente al Rincón de la Calma cuando comienza a mostrar signos de sobrecarga, ¿qué interpretación sería más adecuada?:", "o": ["Dylan está evitando deliberadamente participar en las actividades.", "El Auxiliar Técnico Educativo debería impedirle acudir para fomentar su tolerancia.", "Está desarrollando una dependencia inadecuada del espacio.", "Está utilizando de manera funcional un recurso aprendido para regularse."], "c": 3}, {"s": "¿Cuál sería la actuación menos adecuada respecto al uso de los auriculares?:", "o": ["Utilizarlos en situaciones previamente identificadas como especialmente ruidosas.", "Enseñar a Dylan progresivamente cuando puede necesitarlos.", "Mantenerlos disponibles para que pueda acceder a ellos cuando sean necesarios.", "Utilizarlos durante toda la jornada para evitar cualquier posible sobrecarga sensorial."], "c": 3}, {"s": "Si tenemos en cuenta el código de colores, que se aplica a los fondos o marcos de los pictogramas, basado en la función gramatical de las palabras para facilitar la construcción de frases según Fitzgerald, el color amarillo corresponde a:", "o": ["Personas y pronombres personales.", "Verbos o acciones.", "Adjetivos propios, objetos o lugares.", "Contenido social, expresiones de cortesía y emociones."], "c": 0}, {"s": "¿Qué es la palilalia en un niño con TEA?:", "o": ["La repetición involuntaria y automática de palabras o frases que acaba de decir otra persona.", "La dificultad para iniciar una frase y la repetición voluntaria para ganar tiempo.", "La repetición involuntaria de sus propias silabas, palabras o frases, a menudo cada vez con menos volumen y más rápido.", "La invención de palabras nuevas sin significado para los demás."], "c": 2}, {"s": "Según la actual ley de educación, el calendario escolar de Dylan debe comprender un mínimo de días lectivos en la enseñanza obligatoria, ¿cuántos?:", "o": ["170 días.", "165 días.", "180 días.", "175 días."], "c": 3}]}</script>
 <script>
 (function () {
   var DATA = JSON.parse(document.getElementById('examData').textContent);
@@ -515,7 +521,8 @@ footer a { color: var(--text-secondary); }
   };
 
   function question(n) { return DATA.q[n - 1]; }
-  function isDoubtful(n) { return DATA.dudosas.indexOf(n) !== -1; }
+  function isVoid(n) { return question(n).c === null; }
+  var VOIDED = DATA.q.map(function (q, k) { return k + 1; }).filter(isVoid);
   function caseOf(n) { return Math.floor((n - 1) / PER_CASE); }
 
   function save() {
@@ -530,11 +537,16 @@ footer a { color: var(--text-secondary); }
     return new Array(TOTAL).fill(null);
   }
 
+  function voidedNote(k) {
+    var list = VOIDED.filter(function (n) { return caseOf(n) === k; });
+    if (!list.length) return '';
+    return ' · ' + (list.length === 1 ? 'la ' + list[0] + ', anulada' : 'anuladas: ' + list.join(', '));
+  }
   function buildSheet() {
     var html = '';
     for (var n = 1; n <= TOTAL; n++) {
-      if ((n - 1) % PER_CASE === 0) html += '<div class="sheet-block" aria-hidden="true">' + CASES[caseOf(n)] + ' · ' + n + '–' + (n + PER_CASE - 1) + '</div>';
-      html += '<div class="row" role="group" aria-label="Pregunta ' + n + '" data-n="' + n + '"><span class="row-num" aria-hidden="true">' + n + '</span>';
+      if ((n - 1) % PER_CASE === 0) html += '<div class="sheet-block" aria-hidden="true">' + CASES[caseOf(n)] + ' · ' + n + '–' + (n + PER_CASE - 1) + voidedNote(caseOf(n)) + '</div>';
+      html += '<div class="row' + (isVoid(n) ? ' is-void' : '') + '" role="group" aria-label="Pregunta ' + n + (isVoid(n) ? ', anulada por el tribunal' : '') + '" data-n="' + n + '"><span class="row-num" aria-hidden="true">' + n + '</span>';
       for (var i = 0; i < 4; i++) {
         html += '<button class="opt" type="button" data-n="' + n + '" data-i="' + i + '" aria-pressed="false" aria-label="Pregunta ' + n + ', respuesta ' + LETTERS[i] + '">' + LETTERS[i] + '</button>';
       }
@@ -551,7 +563,7 @@ footer a { color: var(--text-secondary); }
       var i = Number(btn.getAttribute('data-i'));
       btn.setAttribute('aria-pressed', chosen === i ? 'true' : 'false');
       btn.classList.remove('is-right', 'is-wrong', 'is-solution');
-      if (state.graded) {
+      if (state.graded && !isVoid(n)) {
         var correct = question(n).c;
         if (chosen === i && i === correct) btn.classList.add('is-right');
         else if (chosen === i) btn.classList.add('is-wrong');
@@ -654,38 +666,27 @@ footer a { color: var(--text-secondary); }
 
   function fmt(value) { return value.toFixed(2).replace('.', ','); }
 
-  function score(answers, overrides) {
-    var parts = CASES.map(function () { return { ok: 0, ko: 0, bl: 0 }; });
+  function score(answers) {
+    var parts = CASES.map(function () { return { ok: 0, ko: 0, bl: 0, valid: 0 }; });
     for (var n = 1; n <= TOTAL; n++) {
+      if (isVoid(n)) continue;
       var chosen = answers[n - 1];
-      var correct = overrides && overrides.hasOwnProperty(n) ? overrides[n] : question(n).c;
+      var correct = question(n).c;
       var part = parts[caseOf(n)];
+      part.valid++;
       if (chosen === null) part.bl++;
       else if (chosen === correct) part.ok++;
       else part.ko++;
     }
     parts.forEach(function (part) {
       part.net = Math.max(0, part.ok - part.ko / 3);
-      part.mark = part.net / PER_CASE * CASE_MAX;
+      part.mark = part.net / part.valid * CASE_MAX;
       part.passed = part.mark >= CASE_MIN;
     });
     var total = { ok: 0, ko: 0, bl: 0, mark: 0, parts: parts };
     parts.forEach(function (part) { total.ok += part.ok; total.ko += part.ko; total.bl += part.bl; total.mark += part.mark; });
     total.passed = parts.every(function (part) { return part.passed; });
     return total;
-  }
-
-  function doubtRange() {
-    var best = {}, worst = {}, touched = [];
-    DATA.dudosas.forEach(function (n) {
-      var chosen = state.answers[n - 1];
-      var correct = question(n).c;
-      if (chosen === null) return;
-      touched.push(n);
-      best[n] = chosen;
-      worst[n] = chosen === correct ? (correct + 1) % 4 : correct;
-    });
-    return { touched: touched, best: score(state.answers, best), worst: score(state.answers, worst) };
   }
 
   function grade() {
@@ -702,20 +703,18 @@ footer a { color: var(--text-secondary); }
     document.getElementById('tabBl').textContent = '(' + s.bl + ')';
     document.getElementById('resultTitle').textContent = s.passed ? '¡Buen examen!' : 'Tu nota';
     document.getElementById('resultSub').textContent = s.passed
-      ? 'Superas los dos supuestos con la plantilla no oficial.'
+      ? 'Superas los dos supuestos con la plantilla oficial.'
       : 'Para aprobar hace falta al menos un 2,5 en cada supuesto.';
     document.getElementById('parts').innerHTML = s.parts.map(function (part, k) {
       return '<div class="part ' + (part.passed ? 'is-pass' : 'is-low') + '"><span>' + CASES[k] + '</span><b>' + fmt(part.mark) + '</b><small>de 5</small></div>';
     }).join('');
     document.getElementById('formula').innerHTML = s.parts.map(function (part, k) {
-      return CASES[k] + ': <b>' + part.ok + '</b> ' + (part.ok === 1 ? 'acierto' : 'aciertos') + ' − <b>' + part.ko + '</b> ' + (part.ko === 1 ? 'fallo' : 'fallos') + ' ÷ 3 = <b>' + fmt(part.net) + '</b> de 15 → <b>' + fmt(part.mark) + '</b>';
+      return CASES[k] + ': <b>' + part.ok + '</b> ' + (part.ok === 1 ? 'acierto' : 'aciertos') + ' − <b>' + part.ko + '</b> ' + (part.ko === 1 ? 'fallo' : 'fallos') + ' ÷ 3 = <b>' + fmt(part.net) + '</b> de ' + part.valid + ' → <b>' + fmt(part.mark) + '</b>';
     }).join('<br>');
-    var range = doubtRange();
     var doubt = document.getElementById('doubt');
-    if (range.touched.length) {
-      var low = fmt(range.worst.mark), high = fmt(range.best.mark);
-      document.getElementById('doubtText').textContent = 'Las preguntas ' + DATA.dudosas.slice(0, -1).join(', ') + ' y ' + DATA.dudosas[DATA.dudosas.length - 1] + ' admiten discusión. Según lo que diga la plantilla oficial, tu nota quedaría entre ' + low + ' y ' + high + '.';
-      doubt.classList.toggle('is-hidden', low === high);
+    if (VOIDED.length) {
+      document.getElementById('doubtText').textContent = 'El tribunal ha anulado la pregunta ' + VOIDED.join(', ') + ': no cuenta ni como acierto ni como fallo, y el primer supuesto se calcula sobre sus ' + s.parts[0].valid + ' preguntas válidas.';
+      doubt.classList.remove('is-hidden');
     } else {
       doubt.classList.add('is-hidden');
     }
@@ -743,7 +742,7 @@ footer a { color: var(--text-secondary); }
 
   document.getElementById('shareBtn').addEventListener('click', function () {
     var s = score(state.answers);
-    var text = 'He sacado un ' + fmt(s.mark) + ' en los supuestos prácticos de Auxiliar Educativo de la CARM (' + fmt(s.parts[0].mark) + ' y ' + fmt(s.parts[1].mark) + ', plantilla no oficial). Calcula la tuya en OpositaPlus:';
+    var text = 'He sacado un ' + fmt(s.mark) + ' en los supuestos prácticos de Auxiliar Educativo de la CARM (' + fmt(s.parts[0].mark) + ' y ' + fmt(s.parts[1].mark) + ', plantilla oficial). Calcula la tuya en OpositaPlus:';
     var url = 'https://opositaplus.app/examenes/nota-auxiliar-educativo-carm-2026/';
     var btn = this;
     if (navigator.share) {
@@ -769,13 +768,18 @@ footer a { color: var(--text-secondary); }
     for (var n = 1; n <= TOTAL; n++) {
       var q = question(n);
       var chosen = state.answers[n - 1];
-      var kind = chosen === null ? 'bl' : (chosen === q.c ? 'ok' : 'ko');
+      var kind = isVoid(n) ? 'void' : (chosen === null ? 'bl' : (chosen === q.c ? 'ok' : 'ko'));
       if (state.filter !== 'all' && state.filter !== kind) continue;
       html += '<article class="item ' + kind + '"><div class="item-head"><span class="item-num">' + n + '</span><div><p class="item-q">' + escapeHtml(q.s) + '</p>';
-      if (isDoubtful(n)) html += '<span class="item-flag">Pendiente de confirmar</span>';
+      if (kind === 'void') html += '<span class="item-flag is-void">Anulada por el tribunal · no puntúa</span>';
       html += '</div></div><div class="item-answers">';
+      if (kind === 'void') {
+        if (chosen !== null) html += '<div class="ans neutral"><b>' + LETTERS[chosen] + '</b><span><small>Tu respuesta</small>' + escapeHtml(q.o[chosen]) + '</span></div>';
+        html += '</div></article>';
+        continue;
+      }
       if (kind === 'ko') html += '<div class="ans yours"><b>' + LETTERS[chosen] + '</b><span><small>Tu respuesta</small>' + escapeHtml(q.o[chosen]) + '</span></div>';
-      html += '<div class="ans right"><b>' + LETTERS[q.c] + '</b><span><small>' + (kind === 'ok' ? 'Tu respuesta, correcta' : 'Respuesta propuesta') + '</small>' + escapeHtml(q.o[q.c]) + '</span></div>';
+      html += '<div class="ans right"><b>' + LETTERS[q.c] + '</b><span><small>' + (kind === 'ok' ? 'Tu respuesta, correcta' : 'Respuesta correcta') + '</small>' + escapeHtml(q.o[q.c]) + '</span></div>';
       html += '</div></article>';
     }
     var empty = { ko: '¡Ningún fallo! 🎉', bl: 'No dejaste ninguna en blanco.', ok: 'Todavía no hay aciertos.', all: '' };
