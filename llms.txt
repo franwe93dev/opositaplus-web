@@ -5,7 +5,7 @@
 ## Qué es
 
 - **Ámbito:** solo oposiciones de la Región de Murcia. Dos administraciones convocantes: la Comunidad Autónoma (CARM) y el Servicio Murciano de Salud (SMS).
-- **Catálogo:** 91 oposiciones (46 de la CARM y 45 del SMS), con 2.533 temas distintos y 197.660 preguntas de test con corrección razonada.
+- **Catálogo:** 91 oposiciones (46 de la CARM y 45 del SMS), con 2.533 temas distintos y 199.980 preguntas de test con corrección razonada.
 - **Estructura de un tema:** como mínimo tres tests de veinte preguntas, más introducción, puntos clave y los artículos que hay que memorizar. Cada respuesta explica por qué es correcta y cita la norma en la que se apoya.
 - **Exámenes oficiales:** 72 exámenes del Servicio Murciano de Salud transcritos de su cuadernillo, con la letra correcta de la plantilla oficial: 6.160 preguntas reales.
 - **Origen del temario:** cada oposición usa el programa publicado en su propia convocatoria (BORM o portal del SMS). La página de cada oposición cita la Orden o Resolución concreta y enlaza su PDF oficial.
@@ -75,7 +75,7 @@
 
 ## Categorías del Servicio Murciano de Salud (SMS)
 
-- [Analista de Aplicaciones](https://opositaplus.app/oposiciones/sms-murcia-analista-aplicaciones.html): grupo A2, 59 temas, 3.580 preguntas.
+- [Analista de Aplicaciones](https://opositaplus.app/oposiciones/sms-murcia-analista-aplicaciones.html): grupo A2, 59 temas, 5.900 preguntas.
 - [Enfermería](https://opositaplus.app/oposiciones/sms-murcia-enfermeria.html): grupo A2, 71 temas, 7.080 preguntas.
 - [Enfermería Familiar y Comunitaria](https://opositaplus.app/oposiciones/sms-murcia-enfermeria-familiar-comunitaria.html): grupo A2, 54 temas, 5.360 preguntas.
 - [Enfermería Obstétrico-Ginecológica (Matrón/a)](https://opositaplus.app/oposiciones/sms-murcia-matrona.html): grupo A2, 69 temas, 6.860 preguntas.
