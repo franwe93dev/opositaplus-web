@@ -5,7 +5,7 @@
 ## Qué es
 
 - **Ámbito:** solo oposiciones de la Región de Murcia. Dos administraciones convocantes: la Comunidad Autónoma (CARM) y el Servicio Murciano de Salud (SMS).
-- **Catálogo:** 94 oposiciones (48 de la CARM y 46 del SMS), con 2.704 temas distintos y 221.212 preguntas de test con corrección razonada.
+- **Catálogo:** 94 oposiciones (48 de la CARM y 46 del SMS), con 2.704 temas distintos y 221.567 preguntas de test con corrección razonada.
 - **Estructura de un tema:** como mínimo tres tests de veinte preguntas, más introducción, puntos clave y los artículos que hay que memorizar. Cada respuesta explica por qué es correcta y cita la norma en la que se apoya.
 - **Exámenes oficiales:** 72 exámenes del Servicio Murciano de Salud transcritos de su cuadernillo, con la letra correcta de la plantilla oficial: 6.160 preguntas reales.
 - **Origen del temario:** cada oposición usa el programa publicado en su propia convocatoria (BORM o portal del SMS). La página de cada oposición cita la Orden o Resolución concreta y enlaza su PDF oficial.
@@ -55,25 +55,25 @@
 - [Seguridad](https://opositaplus.app/oposiciones/carm-te-seguridad.html): grupo C1, 42 temas, 3.000 preguntas.
 - [Terapeuta](https://opositaplus.app/oposiciones/carm-te-terapeuta.html): grupo C1, 47 temas, 3.300 preguntas.
 - [Tributaria](https://opositaplus.app/oposiciones/carm-te-tributaria.html): grupo C1, 43 temas, 3.060 preguntas.
-- [Agraria](https://opositaplus.app/oposiciones/carm-ta-agraria.html): grupo C2, 29 temas, 1.745 preguntas.
-- [Almacén](https://opositaplus.app/oposiciones/carm-ta-almacen.html): grupo C2, 29 temas, 1.745 preguntas.
-- [Artes Gráficas](https://opositaplus.app/oposiciones/carm-ta-artes-graficas.html): grupo C2, 27 temas, 1.625 preguntas.
-- [Automoción](https://opositaplus.app/oposiciones/carm-ta-automocion.html): grupo C2, 31 temas, 1.865 preguntas.
+- [Agraria](https://opositaplus.app/oposiciones/carm-ta-agraria.html): grupo C2, 29 temas, 2.100 preguntas.
+- [Almacén](https://opositaplus.app/oposiciones/carm-ta-almacen.html): grupo C2, 29 temas, 2.100 preguntas.
+- [Artes Gráficas](https://opositaplus.app/oposiciones/carm-ta-artes-graficas.html): grupo C2, 27 temas, 1.980 preguntas.
+- [Automoción](https://opositaplus.app/oposiciones/carm-ta-automocion.html): grupo C2, 31 temas, 2.220 preguntas.
 - [Auxiliar Administrativo/a](https://opositaplus.app/oposiciones/carm-auxiliar-administrativo.html): grupo C2, 16 temas, 964 preguntas.
-- [Auxiliar Educativo](https://opositaplus.app/oposiciones/carm-ta-auxiliar-educativo.html): grupo C2, 27 temas, 2.345 preguntas.
-- [Biblioteca](https://opositaplus.app/oposiciones/carm-ta-biblioteca.html): grupo C2, 29 temas, 1.745 preguntas.
-- [Celador/a de Caza y Pesca Fluvial](https://opositaplus.app/oposiciones/carm-ta-celador-caza-pesca.html): grupo C2, 29 temas, 1.745 preguntas.
-- [Cocina](https://opositaplus.app/oposiciones/carm-ta-cocina.html): grupo C2, 28 temas, 1.685 preguntas.
-- [Conducción](https://opositaplus.app/oposiciones/carm-ta-conduccion.html): grupo C2, 29 temas, 1.745 preguntas.
-- [Cuidados Auxiliares de Enfermería](https://opositaplus.app/oposiciones/carm-ta-cuidados-auxiliares-enfermeria.html): grupo C2, 30 temas, 1.805 preguntas.
-- [Laboratorio](https://opositaplus.app/oposiciones/carm-ta-laboratorio.html): grupo C2, 28 temas, 1.685 preguntas.
-- [Mantenimiento](https://opositaplus.app/oposiciones/carm-ta-mantenimiento.html): grupo C2, 29 temas, 1.745 preguntas.
-- [Maquinista](https://opositaplus.app/oposiciones/carm-ta-maquinista.html): grupo C2, 29 temas, 1.745 preguntas.
-- [Pesca y Acuicultura](https://opositaplus.app/oposiciones/carm-ta-pesca-acuicultura.html): grupo C2, 30 temas, 1.805 preguntas.
-- [Seguridad y Control de Accesos](https://opositaplus.app/oposiciones/carm-ta-seguridad-control-accesos.html): grupo C2, 19 temas, 1.145 preguntas.
-- [Transmisiones](https://opositaplus.app/oposiciones/carm-ta-transmisiones.html): grupo C2, 27 temas, 1.625 preguntas.
-- [Tributaria](https://opositaplus.app/oposiciones/carm-ta-tributaria.html): grupo C2, 26 temas, 1.525 preguntas.
-- [Vigilancia de Obras](https://opositaplus.app/oposiciones/carm-ta-vigilancia-obras.html): grupo C2, 29 temas, 1.745 preguntas.
+- [Auxiliar Educativo](https://opositaplus.app/oposiciones/carm-ta-auxiliar-educativo.html): grupo C2, 27 temas, 2.700 preguntas.
+- [Biblioteca](https://opositaplus.app/oposiciones/carm-ta-biblioteca.html): grupo C2, 29 temas, 2.100 preguntas.
+- [Celador/a de Caza y Pesca Fluvial](https://opositaplus.app/oposiciones/carm-ta-celador-caza-pesca.html): grupo C2, 29 temas, 2.100 preguntas.
+- [Cocina](https://opositaplus.app/oposiciones/carm-ta-cocina.html): grupo C2, 28 temas, 2.040 preguntas.
+- [Conducción](https://opositaplus.app/oposiciones/carm-ta-conduccion.html): grupo C2, 29 temas, 2.100 preguntas.
+- [Cuidados Auxiliares de Enfermería](https://opositaplus.app/oposiciones/carm-ta-cuidados-auxiliares-enfermeria.html): grupo C2, 30 temas, 2.160 preguntas.
+- [Laboratorio](https://opositaplus.app/oposiciones/carm-ta-laboratorio.html): grupo C2, 28 temas, 2.040 preguntas.
+- [Mantenimiento](https://opositaplus.app/oposiciones/carm-ta-mantenimiento.html): grupo C2, 29 temas, 2.100 preguntas.
+- [Maquinista](https://opositaplus.app/oposiciones/carm-ta-maquinista.html): grupo C2, 29 temas, 2.100 preguntas.
+- [Pesca y Acuicultura](https://opositaplus.app/oposiciones/carm-ta-pesca-acuicultura.html): grupo C2, 30 temas, 2.160 preguntas.
+- [Seguridad y Control de Accesos](https://opositaplus.app/oposiciones/carm-ta-seguridad-control-accesos.html): grupo C2, 19 temas, 1.500 preguntas.
+- [Transmisiones](https://opositaplus.app/oposiciones/carm-ta-transmisiones.html): grupo C2, 27 temas, 1.980 preguntas.
+- [Tributaria](https://opositaplus.app/oposiciones/carm-ta-tributaria.html): grupo C2, 26 temas, 1.880 preguntas.
+- [Vigilancia de Obras](https://opositaplus.app/oposiciones/carm-ta-vigilancia-obras.html): grupo C2, 29 temas, 2.100 preguntas.
 
 ## Categorías del Servicio Murciano de Salud (SMS)
 
