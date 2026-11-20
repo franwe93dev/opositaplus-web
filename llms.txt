@@ -7,7 +7,7 @@
 - **Ámbito:** solo oposiciones de la Región de Murcia. Dos administraciones convocantes: la Comunidad Autónoma (CARM) y el Servicio Murciano de Salud (SMS).
 - **Catálogo:** 94 oposiciones (48 de la CARM y 46 del SMS), con 2.704 temas distintos y 221.567 preguntas de test con corrección razonada.
 - **Estructura de un tema:** como mínimo tres tests de veinte preguntas, más introducción, puntos clave y los artículos que hay que memorizar. Cada respuesta explica por qué es correcta y cita la norma en la que se apoya.
-- **Exámenes oficiales:** 162 exámenes del Servicio Murciano de Salud transcritos de su cuadernillo, con la letra correcta de la plantilla oficial: 12.611 preguntas reales.
+- **Exámenes oficiales:** 173 exámenes del Servicio Murciano de Salud transcritos de su cuadernillo, con la letra correcta de la plantilla oficial: 13.917 preguntas reales.
 - **Origen del temario:** cada oposición usa el programa publicado en su propia convocatoria (BORM o portal del SMS). La página de cada oposición cita la Orden o Resolución concreta y enlaza su PDF oficial.
 - **Grupos de clasificación cubiertos:** A2, C1, C2 y Agrupaciones Profesionales (AP).
 - **Precio:** plan gratuito sin caducidad ni tarjeta (el primer test del primer tema de la parte general y el de la específica). Planes de pago desde 4,99 €/mes o 49,99 €/año (Básico, una oposición), 9,99 €/mes (Plus, hasta cinco) y 19,99 €/mes (Max, ilimitadas). Sin anuncios, sin permanencia y sin periodo de prueba.
