@@ -5,7 +5,7 @@
 ## Qué es
 
 - **Ámbito:** solo oposiciones de la Región de Murcia. Dos administraciones convocantes: la Comunidad Autónoma (CARM) y el Servicio Murciano de Salud (SMS).
-- **Catálogo:** 94 oposiciones (48 de la CARM y 46 del SMS), con 2.704 temas distintos y 230.367 preguntas de test con corrección razonada.
+- **Catálogo:** 94 oposiciones (48 de la CARM y 46 del SMS), con 2.704 temas distintos y 232.527 preguntas de test con corrección razonada.
 - **Estructura de un tema:** como mínimo tres tests de veinte preguntas, más introducción, puntos clave y los artículos que hay que memorizar. Cada respuesta explica por qué es correcta y cita la norma en la que se apoya.
 - **Exámenes oficiales:** 257 exámenes del Servicio Murciano de Salud transcritos de su cuadernillo, con la letra correcta de la plantilla oficial: 20.380 preguntas reales.
 - **Origen del temario:** cada oposición usa el programa publicado en su propia convocatoria (BORM o portal del SMS). La página de cada oposición cita la Orden o Resolución concreta y enlaza su PDF oficial.
@@ -41,7 +41,7 @@
 - [Delineación](https://opositaplus.app/oposiciones/carm-te-delineacion.html): grupo C1, 42 temas, 4.200 preguntas.
 - [Educación Física y Deporte](https://opositaplus.app/oposiciones/carm-te-educacion-fisica-deporte.html): grupo C1, 47 temas, 4.700 preguntas.
 - [Educación Infantil](https://opositaplus.app/oposiciones/carm-te-educacion-infantil.html): grupo C1, 38 temas, 3.800 preguntas.
-- [Educación e Intervención Social](https://opositaplus.app/oposiciones/carm-te-educacion-intervencion-social.html): grupo C1, 47 temas, 3.300 preguntas.
+- [Educación e Intervención Social](https://opositaplus.app/oposiciones/carm-te-educacion-intervencion-social.html): grupo C1, 47 temas, 4.060 preguntas.
 - [Electrónica](https://opositaplus.app/oposiciones/carm-te-electronica.html): grupo C1, 47 temas, 3.300 preguntas.
 - [Emergencias](https://opositaplus.app/oposiciones/carm-te-emergencias.html): grupo C1, 42 temas, 3.000 preguntas.
 - [Imagen y Sonido](https://opositaplus.app/oposiciones/carm-te-imagen-sonido.html): grupo C1, 52 temas, 3.600 preguntas.
@@ -53,7 +53,7 @@
 - [Prevención](https://opositaplus.app/oposiciones/carm-te-prevencion.html): grupo C1, 46 temas, 3.240 preguntas.
 - [Sanidad Ambiental](https://opositaplus.app/oposiciones/carm-te-sanidad-ambiental.html): grupo C1, 47 temas, 3.300 preguntas.
 - [Seguridad](https://opositaplus.app/oposiciones/carm-te-seguridad.html): grupo C1, 42 temas, 3.000 preguntas.
-- [Terapeuta](https://opositaplus.app/oposiciones/carm-te-terapeuta.html): grupo C1, 47 temas, 3.300 preguntas.
+- [Terapeuta](https://opositaplus.app/oposiciones/carm-te-terapeuta.html): grupo C1, 47 temas, 4.700 preguntas.
 - [Tributaria](https://opositaplus.app/oposiciones/carm-te-tributaria.html): grupo C1, 43 temas, 3.060 preguntas.
 - [Agraria](https://opositaplus.app/oposiciones/carm-ta-agraria.html): grupo C2, 29 temas, 2.100 preguntas.
 - [Almacén](https://opositaplus.app/oposiciones/carm-ta-almacen.html): grupo C2, 29 temas, 2.100 preguntas.
