@@ -5,7 +5,7 @@
 ## Qué es
 
 - **Ámbito:** solo oposiciones de la Región de Murcia. Dos administraciones convocantes: la Comunidad Autónoma (CARM) y el Servicio Murciano de Salud (SMS).
-- **Catálogo:** 94 oposiciones (48 de la CARM y 46 del SMS), con 2.704 temas distintos y 238.327 preguntas de test con corrección razonada.
+- **Catálogo:** 94 oposiciones (48 de la CARM y 46 del SMS), con 2.704 temas distintos y 240.163 preguntas de test con corrección razonada.
 - **Estructura de un tema:** como mínimo tres tests de veinte preguntas, más introducción, puntos clave y los artículos que hay que memorizar. Cada respuesta explica por qué es correcta y cita la norma en la que se apoya.
 - **Exámenes oficiales:** 257 exámenes del Servicio Murciano de Salud transcritos de su cuadernillo, con la letra correcta de la plantilla oficial: 20.380 preguntas reales.
 - **Origen del temario:** cada oposición usa el programa publicado en su propia convocatoria (BORM o portal del SMS). La página de cada oposición cita la Orden o Resolución concreta y enlaza su PDF oficial.
@@ -31,7 +31,7 @@
 - [Agrupación Profesional de Servicios Públicos](https://opositaplus.app/oposiciones/carm-ap-servicios-publicos.html): grupo AP, 12 temas, 788 preguntas.
 - [Agrupación Profesional de Servicios Públicos · Discapacidad Intelectual](https://opositaplus.app/oposiciones/carm-ap-servicios-publicos-di.html): grupo AP, 9 temas, 541 preguntas.
 - [Administrativo/a](https://opositaplus.app/oposiciones/carm-administrativo.html): grupo C1, 28 temas, 1.691 preguntas.
-- [Agente Medioambiental](https://opositaplus.app/oposiciones/carm-agentes-medioambientales.html): grupo C1, 42 temas, 3.000 preguntas.
+- [Agente Medioambiental](https://opositaplus.app/oposiciones/carm-agentes-medioambientales.html): grupo C1, 42 temas, 4.200 preguntas.
 - [Agraria](https://opositaplus.app/oposiciones/carm-te-agraria.html): grupo C1, 42 temas, 4.200 preguntas.
 - [Animación Social y Cultural](https://opositaplus.app/oposiciones/carm-te-animacion-social-cultural.html): grupo C1, 47 temas, 4.700 preguntas.
 - [Artes Gráficas](https://opositaplus.app/oposiciones/carm-te-artes-graficas.html): grupo C1, 44 temas, 4.400 preguntas.
@@ -59,7 +59,7 @@
 - [Almacén](https://opositaplus.app/oposiciones/carm-ta-almacen.html): grupo C2, 29 temas, 2.900 preguntas.
 - [Artes Gráficas](https://opositaplus.app/oposiciones/carm-ta-artes-graficas.html): grupo C2, 27 temas, 2.700 preguntas.
 - [Automoción](https://opositaplus.app/oposiciones/carm-ta-automocion.html): grupo C2, 31 temas, 3.100 preguntas.
-- [Auxiliar Administrativo/a](https://opositaplus.app/oposiciones/carm-auxiliar-administrativo.html): grupo C2, 16 temas, 964 preguntas.
+- [Auxiliar Administrativo/a](https://opositaplus.app/oposiciones/carm-auxiliar-administrativo.html): grupo C2, 16 temas, 1.600 preguntas.
 - [Auxiliar Educativo](https://opositaplus.app/oposiciones/carm-ta-auxiliar-educativo.html): grupo C2, 27 temas, 2.700 preguntas.
 - [Biblioteca](https://opositaplus.app/oposiciones/carm-ta-biblioteca.html): grupo C2, 29 temas, 2.900 preguntas.
 - [Celador/a de Caza y Pesca Fluvial](https://opositaplus.app/oposiciones/carm-ta-celador-caza-pesca.html): grupo C2, 29 temas, 2.100 preguntas.
