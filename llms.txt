@@ -5,7 +5,7 @@
 ## Qué es
 
 - **Ámbito:** solo oposiciones de la Región de Murcia. Dos administraciones convocantes: la Comunidad Autónoma (CARM) y el Servicio Murciano de Salud (SMS).
-- **Catálogo:** 94 oposiciones (48 de la CARM y 46 del SMS), con 2.704 temas distintos y 241.272 preguntas de test con corrección razonada.
+- **Catálogo:** 94 oposiciones (48 de la CARM y 46 del SMS), con 2.704 temas distintos y 245.535 preguntas de test con corrección razonada.
 - **Estructura de un tema:** como mínimo tres tests de veinte preguntas, más introducción, puntos clave y los artículos que hay que memorizar. Cada respuesta explica por qué es correcta y cita la norma en la que se apoya.
 - **Exámenes oficiales:** 257 exámenes del Servicio Murciano de Salud transcritos de su cuadernillo, con la letra correcta de la plantilla oficial: 20.380 preguntas reales.
 - **Origen del temario:** cada oposición usa el programa publicado en su propia convocatoria (BORM o portal del SMS). La página de cada oposición cita la Orden o Resolución concreta y enlaza su PDF oficial.
@@ -28,8 +28,8 @@
 
 - [Educación e Intervención Social](https://opositaplus.app/oposiciones/carm-tec-educacion-intervencion-social.html): grupo A2, 72 temas, 7.160 preguntas.
 - [Trabajo Social](https://opositaplus.app/oposiciones/carm-tec-trabajo-social.html): grupo A2, 72 temas, 7.140 preguntas.
-- [Agrupación Profesional de Servicios Públicos](https://opositaplus.app/oposiciones/carm-ap-servicios-publicos.html): grupo AP, 12 temas, 788 preguntas.
-- [Agrupación Profesional de Servicios Públicos · Discapacidad Intelectual](https://opositaplus.app/oposiciones/carm-ap-servicios-publicos-di.html): grupo AP, 9 temas, 541 preguntas.
+- [Agrupación Profesional de Servicios Públicos](https://opositaplus.app/oposiciones/carm-ap-servicios-publicos.html): grupo AP, 12 temas, 1.212 preguntas.
+- [Agrupación Profesional de Servicios Públicos · Discapacidad Intelectual](https://opositaplus.app/oposiciones/carm-ap-servicios-publicos-di.html): grupo AP, 9 temas, 900 preguntas.
 - [Administrativo/a](https://opositaplus.app/oposiciones/carm-administrativo.html): grupo C1, 28 temas, 2.800 preguntas.
 - [Agente Medioambiental](https://opositaplus.app/oposiciones/carm-agentes-medioambientales.html): grupo C1, 42 temas, 4.200 preguntas.
 - [Agraria](https://opositaplus.app/oposiciones/carm-te-agraria.html): grupo C1, 42 temas, 4.200 preguntas.
@@ -69,11 +69,11 @@
 - [Laboratorio](https://opositaplus.app/oposiciones/carm-ta-laboratorio.html): grupo C2, 28 temas, 2.040 preguntas.
 - [Mantenimiento](https://opositaplus.app/oposiciones/carm-ta-mantenimiento.html): grupo C2, 29 temas, 2.100 preguntas.
 - [Maquinista](https://opositaplus.app/oposiciones/carm-ta-maquinista.html): grupo C2, 29 temas, 2.100 preguntas.
-- [Pesca y Acuicultura](https://opositaplus.app/oposiciones/carm-ta-pesca-acuicultura.html): grupo C2, 30 temas, 2.160 preguntas.
-- [Seguridad y Control de Accesos](https://opositaplus.app/oposiciones/carm-ta-seguridad-control-accesos.html): grupo C2, 19 temas, 1.500 preguntas.
-- [Transmisiones](https://opositaplus.app/oposiciones/carm-ta-transmisiones.html): grupo C2, 27 temas, 1.980 preguntas.
-- [Tributaria](https://opositaplus.app/oposiciones/carm-ta-tributaria.html): grupo C2, 26 temas, 1.880 preguntas.
-- [Vigilancia de Obras](https://opositaplus.app/oposiciones/carm-ta-vigilancia-obras.html): grupo C2, 29 temas, 2.100 preguntas.
+- [Pesca y Acuicultura](https://opositaplus.app/oposiciones/carm-ta-pesca-acuicultura.html): grupo C2, 30 temas, 3.000 preguntas.
+- [Seguridad y Control de Accesos](https://opositaplus.app/oposiciones/carm-ta-seguridad-control-accesos.html): grupo C2, 19 temas, 1.900 preguntas.
+- [Transmisiones](https://opositaplus.app/oposiciones/carm-ta-transmisiones.html): grupo C2, 27 temas, 2.700 preguntas.
+- [Tributaria](https://opositaplus.app/oposiciones/carm-ta-tributaria.html): grupo C2, 26 temas, 2.600 preguntas.
+- [Vigilancia de Obras](https://opositaplus.app/oposiciones/carm-ta-vigilancia-obras.html): grupo C2, 29 temas, 2.900 preguntas.
 
 ## Categorías del Servicio Murciano de Salud (SMS)
 
